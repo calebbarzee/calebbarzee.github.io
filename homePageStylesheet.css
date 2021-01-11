@@ -1,5 +1,17 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-	font-family: "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	max-width: 1900px;
+	font-family: "DejaVu Sans", "Trebuchet MS", "sans-serif";
+}
+header {
+	background-color: black;
+	text-align: center;	
+}
+h1 {
+	color: white;
+}
+ul {
+	list-style-type: none;
+	
 }
