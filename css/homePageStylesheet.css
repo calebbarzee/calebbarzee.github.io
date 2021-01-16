@@ -3,18 +3,28 @@
 
 body {
   max-width: 1900px;
-  font-family: "DejaVu Sans", "Trebuchet MS", "sans-serif";
+  font-family: 'Raleway', sans-serif;
 }
-
 header {
   background-color: black;
   text-align: center;
 }
-
-h1 {
+h1, .page-title {
+  font-family: "Monoton", cursive;
   color: white;
+}
+h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+p {
+  font-family: 'Vollkorn', serif;
 }
 
 ul {
   list-style-type: none;
+}
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
