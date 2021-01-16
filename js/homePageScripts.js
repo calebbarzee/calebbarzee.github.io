@@ -1,14 +1,20 @@
 // JavaScript Document
 
-//function copyrightDate() {
-let options = {
+function copyrightDate() {
+let options1 = {
   year: "numeric",
 };
-let copyrightYear = new Date().toLocaleDateString("en-US", options);
+let copyrightYear = new Date().toLocaleDateString(undefined, options1);
 document.getElementById("copyrightYear").textContent = copyrightYear;
-//}
+}
 
-//function lastUpdatedDate() {
-let lastUpdated = Date(document.lastModified);
+function lastUpdatedDate() {
+let options2 ={
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+};
+let lastUpdated = new Date(document.lastModified);
+lastUpdated = lastUpdated.toLocaleDateString(undefined, options2);
 document.getElementById("updateDate").textContent = lastUpdated;
-//}
+}
