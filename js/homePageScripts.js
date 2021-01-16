@@ -18,3 +18,6 @@ let lastUpdated = new Date(document.lastModified);
 lastUpdated = lastUpdated.toLocaleDateString(undefined, options2);
 document.getElementById("updateDate").textContent = lastUpdated;
 }
+
+copyrightDate(); 
+lastUpdatedDate();
