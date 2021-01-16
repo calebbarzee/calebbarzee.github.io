@@ -10,11 +10,8 @@ header {
   text-align: center;
 }
 h1, .page-title {
-  font-family: "Monoton", cursive;
-  color: white;
-}
-h2, h3, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 p {
   font-family: 'Vollkorn', serif;
