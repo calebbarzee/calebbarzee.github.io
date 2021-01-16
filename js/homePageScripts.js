@@ -2,10 +2,10 @@
 
 //function copyrightDate() {
 let options = {
-    weekday: 'long',
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
 };
 let copyrightYear = new Date.toLocaleDateString("en-US", options);
 print(copyrightYear);

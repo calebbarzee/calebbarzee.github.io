@@ -2,19 +2,19 @@
 /* CSS Document */
 
 body {
-	max-width: 1900px;
-	font-family: "DejaVu Sans", "Trebuchet MS", "sans-serif";
+  max-width: 1900px;
+  font-family: "DejaVu Sans", "Trebuchet MS", "sans-serif";
 }
 
 header {
-	background-color: black;
-	text-align: center;
+  background-color: black;
+  text-align: center;
 }
 
 h1 {
-	color: white;
+  color: white;
 }
 
 ul {
-	list-style-type: none;
+  list-style-type: none;
 }
