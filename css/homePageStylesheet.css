@@ -4,24 +4,43 @@
 body {
   max-width: 1900px;
   font-family: 'Raleway', sans-serif;
+  background-color: #eeefea;
+  margin: 0em 2em 0em;
 }
 header {
-  background-color: black;
+  background-color: #2f2c1b;
   text-align: center;
+  min-height: 5em;
 }
 h1, .page-title {
   font-family: 'Montserrat', sans-serif;
-  color: white;
-}
-p {
-  font-family: 'Vollkorn', serif;
+  color: #eeefea;
+  padding-top: .5em;
 }
 
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 5em);
+  margin: 1em;
+}
+h2 {
+  font-size: 2em;
+}
+img {
+  grid-column: 2;
+  max-height: 30em;
+  width: auto;
+}
+ul .assignment-list {
+  grid-column: 1;
+  grid-row: 1;
+}
 ul {
   list-style-type: none;
 }
 footer {
-  background-color: black;
-  color: white;
+  background-color: #2f2c1b;
+  color: #eeefea;
   text-align: center;
 }
