@@ -14,8 +14,9 @@ header {
 }
 h1, .page-title {
   font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
   color: #eeefea;
-  padding-top: .5em;
+  padding-top: .25em;
 }
 
 main {
