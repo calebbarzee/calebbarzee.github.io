@@ -1,45 +1,61 @@
-@charset "utf-8";
-/* CSS Document */
 
-body {
-  font-family: 'Raleway', sans-serif;
-  background-color: #eeefea;
-  margin: 0em 2em 0em;
-}
-header {
-  background-color: #2f2c1b;
-  text-align: center;
-  min-height: 5em;
-}
-h1, .page-title {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3em;
-  color: #eeefea;
-  padding-top: .25em;
-}
-
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 1em;
-}
-h2 {
-  font-size: 2em;
-}
-img {
-  grid-column: 2;
-  max-width: 480px;
-  height: auto;
-}
-ul .assignment-list {
-  grid-column: 1;
-  grid-row: 1;
-}
-ul {
-  list-style-type: none;
-}
-footer {
-  background-color: #2f2c1b;
-  color: #eeefea;
-  text-align: center;
+  body {
+    font-family: "Raleway", sans-serif;
+    background-color: #eeefea;
+    margin: 0em 2em 0em;
+  }
+  header {
+    background-color: #2f2c1b;
+    text-align: center;
+    min-height: 5em;
+  }
+  h1,
+  .page-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3em;
+    color: #eeefea;
+    padding-top: 0.25em;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  section {
+      align-items: center;
+      text-align: center;
+      margin: 2em 5em 2em;
+  }
+  #column1, #column2, #column3 {
+      grid-column: 1;
+  }
+  p {
+      font-size: 1.2em;
+  }
+  img {
+    grid-column: 2;
+    max-width: 360px;
+    max-height: 800px;
+  }
+  ul .assignment-list {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+        color: #2f2c1b;
+  }
+  footer {
+    background-color: #2f2c1b;
+    color: #eeefea;
+    text-align: center;
+  }
+  footer a{
+      color: #eeefea;
+  }
 }
