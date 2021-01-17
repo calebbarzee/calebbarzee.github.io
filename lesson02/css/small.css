@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #eeefea;
+  margin: 0em 2em 0em;
+}
+header {
+  background-color: #2f2c1b;
+  text-align: center;
+  min-height: 5em;
+}
+h1, .page-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  color: #eeefea;
+  padding-top: .25em;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 1em;
+}
+h2 {
+  font-size: 2em;
+}
+img {
+  grid-column: 2;
+  max-width: 480px;
+  height: auto;
+}
+ul .assignment-list {
+  grid-column: 1;
+  grid-row: 1;
+}
+ul {
+  list-style-type: none;
+}
+footer {
+  background-color: #2f2c1b;
+  color: #eeefea;
+  text-align: center;
+}
