@@ -37,8 +37,8 @@
   }
   img {
     grid-column: 2;
-    max-width: 360px;
-    max-height: 800px;
+    width: 100%;
+    height: auto;
   }
   ul .assignment-list {
     grid-column: 1;
