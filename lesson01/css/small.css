@@ -13,7 +13,7 @@ h1,
 .page-title {
   font-family: "Montserrat", sans-serif;
   color: #eeefea;
-  font-size: 3em;
+  font-size: 2em;
 }
 main {
   width: 90%;
@@ -22,13 +22,13 @@ main {
   min-height: 300px;
 }
 h2 {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 img {
-  float: right;
-  width: 25%;
+  width: 30%;
   min-width: 100px;
   max-width: 200px;
+  margin: 0 2em 0;
 }
 ul {
   list-style-type: none;
