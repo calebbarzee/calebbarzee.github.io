@@ -31,12 +31,15 @@ body {
   h2 {
     font-size: 2em;
   }
-  img {
-    float: right;
+  .logo_img{
     width: 25%;
     min-width: 100px;
     max-width: 200px;
   }
+  .color_scheme_img{
+    width: 100%;
+  }
+
   ul {
     list-style-type: none;
   }
