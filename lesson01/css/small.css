@@ -1,6 +1,9 @@
-
+.page_container {
+  max-width: 1000px;
+  margin: auto;
+}
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   background-color: #eeefea;
   align-items: center;
 }
@@ -11,7 +14,7 @@ header {
 }
 h1,
 .page-title {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #eeefea;
   font-size: 2em;
 }
