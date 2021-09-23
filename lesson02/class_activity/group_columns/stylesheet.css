@@ -52,8 +52,7 @@
     background-color: #e6ebf0;
   }
   #container {
-    display: inline-block;
-    position: relative;
+    display: inline;
     background-color: #e6ebf0;
     align-items: center;
   }
@@ -63,20 +62,24 @@
     text-align: center;
     width: 15em;
     height: 30em;
-    margin: 2%;
+    margin: auto;
   }
   #card-2 {
+    position: relative;
+    top: -30em;
     width: 15em;
     height: 33em;
-    margin: 2%;
+    margin: auto;
   }
-  #card-2 {
-    position: absolute;
-  }
-  #card-2-content {
+  #card-1 {
     position: relative;
+    top: 34em;
+    margin: auto;
   }
-
+  #card-3 {
+    position: relative;
+    top: 2em;
+  }
   .price {
     color: #12aaeb;
     display: inline;
