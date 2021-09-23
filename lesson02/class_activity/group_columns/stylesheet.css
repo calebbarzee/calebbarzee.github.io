@@ -1,0 +1,104 @@
+@media only screen and (min-width: 700px) {
+  body {
+    background-color: #e6ebf0;
+  }
+  #container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+  }
+
+  .card {
+    background-color: white;
+    text-align: center;
+    width: 15em;
+    height: 30em;
+    margin: 2em;
+  }
+  #card-2 {
+    width: 18em;
+    height: 33em;
+    margin: 2%;
+  }
+  .price {
+    color: #12aaeb;
+    display: inline;
+    vertical-align: text-top;
+  }
+
+  #yellow {
+    background-color: #ffcf2d;
+    /* color: white; */
+    border: none;
+  }
+
+  .heading {
+    color: #12aaeb;
+  }
+
+  .popular {
+    background-color: #12aaeb;
+    color: white;
+  }
+
+  .button {
+    box-shadow: black;
+    box-shadow: 2px 2px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  body {
+    background-color: #e6ebf0;
+  }
+  #container {
+    display: inline-block;
+    position: relative;
+    background-color: #e6ebf0;
+    align-items: center;
+  }
+
+  .card {
+    background-color: white;
+    text-align: center;
+    width: 15em;
+    height: 30em;
+    margin: 2%;
+  }
+  #card-2 {
+    width: 15em;
+    height: 33em;
+    margin: 2%;
+  }
+  #card-2 {
+    position: absolute;
+  }
+  #card-2-content {
+    position: relative;
+  }
+
+  .price {
+    color: #12aaeb;
+    display: inline;
+    vertical-align: text-top;
+  }
+
+  #yellow {
+    background-color: #ffcf2d;
+    color: white;
+    border: none;
+  }
+
+  .heading {
+    color: #12aaeb;
+  }
+
+  .popular {
+    background-color: #12aaeb;
+    color: white;
+  }
+
+  .button {
+    box-shadow: 2px 2px;
+  }
+}
