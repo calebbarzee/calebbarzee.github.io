@@ -1,8 +1,11 @@
-@media (min-width: 420px) {
-    nav ul {
-        display: flex;
-    }
-    nav ul li {
-        flex: 1 1 100%;
-    }
+@media (min-width: 800px) {
+  .nav_bar {
+    display: flex;
+    margin: auto;
+  }
+  .nav_bar li {
+    margin: auto;
+    padding: 2pt 5%;
+    font-size: 15pt;
+  }
 }
