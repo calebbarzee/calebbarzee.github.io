@@ -1,24 +1,33 @@
 header {
   /* background-color: #fff; */
   /* padding: 5px 0; */
-  display: flex;
+  display: inline;
   align-items: center;
   justify-content: center;
 }
+.icon {
+  max-width: 50px;
+}
+.logo {
+  max-width: 200px;
+}
+.hero_img {
+  max-width: 800px;
+}
 nav {
-  margin: 0 auto;
-  max-width: 90%;
-  background-color: rgb(85, 85, 85);
+  max-width: 80%;
 }
 .navigation {
   list-style: none;
-  padding: 0;
 }
 .navigation li:first-child {
   display: block;
 }
 .navigation li {
   display: none;
+}
+.responsive li {
+  display: block;
 }
 .navigation a {
   display: block;
@@ -27,11 +36,9 @@ nav {
   text-decoration: none;
   color: black;
   font-weight: 700;
+  transition: 0.5s;
 }
 .navigation a:hover {
   color: white;
   background-color: black;
-}
-.responsive li {
-  display: block;
 }

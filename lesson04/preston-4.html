@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <script src="js/responsive_menu.js" defer></script>
@@ -12,11 +13,14 @@
 </head>
 <body>
     <header>
-        <img src="assets/sonorous-forecasts-logo.png" alt="Sonorous Forecasts logo">
+        <img class="logo" src="assets/sonorous-forecasts-logo.png" alt="Sonorous Forecasts logo">
         <h2 class="website_title">Sonorous Forecasts</h2>
         <h4 class="website_motto">Disseminating weather information for you.</h4>
-        <nav><ul>
-            <<li><a class="menu_button" href="#">Menu</a></li>
+        <nav>
+            <ul class="navigation responsive">
+            <li>
+                <img class="menu_button icon" src="assets/hamburger_menu.png" alt="Hamburger Menu Icon">
+            </li>
             <li><a href="#">Home</a></li>
             <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -28,7 +32,7 @@
     <main>
         <h3 class="page_title">Preston</h3>
         <!-- full width image -->
-        <img class="hero_img" src="" alt="Image of Preston, Idaho">
+        <img class="hero_img" src="assets/preston_hero_img.png" alt="Image of Preston, Idaho">
         <div class="weather_summary">
             <h3>Weather Summary</h3>
             <p>Weather summary paragraph example. 
@@ -42,9 +46,14 @@
 
     </main>
     <footer>
-        <ul>
-            <li>Hamburger Menu by <a href="https://thenounproject.com/shuaibtawfeeq/">shuai tawf</a> from the Noun Project</li>
-        </ul>
+        <h5>Contact Information</h5>
+        <img class="contact_icon, icon" src="assets/phone_icon.png" alt="Image of phone">
+        <p class="contact_info">555-555-5555</p>
+        <img class="contact_icon, icon" src="assets/email_icon.png" alt="Image of email letter">
+        <p class="contact_info">nonsense@example.com</p>
+        <div class="footer_map"></div>
+
+        
         <span id="current_date"></span>
     </footer>
 </body>
