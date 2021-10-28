@@ -1,20 +1,26 @@
 header {
   /* background-color: #fff; */
   /* padding: 5px 0; */
-  display: inline;
   align-items: center;
   justify-content: center;
 }
 .icon {
-  max-width: 50px;
+  max-width: 3rem;
 }
 .logo {
-  max-width: 200px;
+  max-width: 10rem;
+}
+.title_motto {
+  display: flex;
+}
+.website_motto {
+  display: block;
 }
 .hero_img {
-  max-width: 800px;
+  max-width: 70rem;
 }
-nav {
+.nav_container {
+  display: block;
   max-width: 80%;
 }
 .navigation {

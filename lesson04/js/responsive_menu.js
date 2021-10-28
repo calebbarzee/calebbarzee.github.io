@@ -6,9 +6,9 @@ menu_button.addEventListener('click',function() {
 		},false);
 
 menu_button.addEventListener('mouseover', function( event ) {
-	event.target.src = "assests/hamburger_menu_black-01.png";
+	event.target.src = "assets/hamburger_menu_black-01.png";
 setTimeout(function() {
-		event.target.src = "assests/hamburger_menu.png";
+		event.target.src = "assets/hamburger_menu.png";
 	  }, 500);
 	}, false);
 
