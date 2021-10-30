@@ -79,6 +79,20 @@
         grid-column: 2 / 4;
         grid-row: 5 / 7;
     }
+    /* responsive menu css */
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block; /* change state in small view */
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -106,6 +120,20 @@
     #pics div p {
         margin-top: -0.2em;
     }
+    /* responsive menu css */
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block; /* change state in small view */
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
 }
 @media screen and (max-width: 500px) {
     #main {
@@ -131,4 +159,75 @@
     #pics div p {
         margin-top: -0.2em;
     }
+}
+
+body {
+    font-size: 1.2rem;
+}
+header {
+    /* background-color: pink; */
+}
+.icon {
+    max-width: 3rem;
+}
+.head_non_nav {
+    margin: 0 25%;
+    padding: 1em 0em 3em;
+    display: block;
+}
+.head_non_nav img {
+    float: left;
+    max-width: 10rem;
+}
+.title_motto {
+    margin-top: 2em;
+    display: block;
+    /* background-color: lightblue; */
+}
+.hero_img {
+    max-width: 70rem;
+}
+/* responsiv nav */
+.nav_container {
+    display: block;
+    max-width: 80%;
+}
+.navigation {
+    list-style: none;
+}
+.navigation li:first-child {
+    display: block;
+}
+.navigation li {
+    display: none;
+}
+.responsive li {
+    display: block;
+}
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.navigation a:hover {
+    color: white;
+    background-color: black;
+}
+.menu_button {
+    margin-left: 85%;
+}
+
+footer {
+    /* background-color: pink; */
+    display: block;
+}
+.phone {
+    display: inline;
+}
+.email {
+    display: inline;
 }

@@ -8,9 +8,32 @@
     <title>Sonorous Forecasts Gallery</title>
     <link rel="stylesheet" href="./css/stylesheet.css">
     <script src="./js/gallery_load.js" defer></script>
+    <script src="js/responsive_menu.js" defer></script>
+    <script src="js/current_date.js" defer></script>
 </head>
 
 <body>
+    <header>
+        <div class="head_non_nav">
+            <img class="logo" src="assets/sonorous-forecasts-logo.png" alt="Sonorous Forecasts logo">
+            <div class="title_motto">
+                <h2 class="website_title">Sonorous Forecasts</h2>
+                <h4 class="website_motto">Disseminating weather information for you.</h4>
+            </div>
+        </div>
+        <nav>
+            <ul class="navigation responsive">
+            <li>
+                <img class="menu_button icon" src="assets/hamburger_menu.png" alt="Hamburger Menu Icon">
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="../lesson07/index.html">Gallery</a></li>
+        </ul></nav>
+    </header>
     <div id="main">
         <div id="pics">
             <div class="one shadow_hover">
@@ -55,7 +78,19 @@
             </div>
             <!-- <img id="eleven" class="blur" src="https://tinyurl.com/49w6s67s" data-src="./assets/weather11.jpg" alt="weather image"> -->
     </div>
-
+    <footer>
+        <h5>Contact Information</h5>
+        <div class="phone">
+        <img class="contact_icon, icon" src="assets/phone_icon.png" alt="Image of phone">
+        <p class="contact_info">555-555-5555</p>
+        </div>
+        <div class="email">
+        <img class="contact_icon, icon" src="assets/email_icon.png" alt="Image of email letter">
+        <p class="contact_info">nonsense@example.com</p>
+        </div>
+        <div class="footer_map"></div>
+        <span id="current_date"></span>
+    </footer>
 </body>
 
 </html>

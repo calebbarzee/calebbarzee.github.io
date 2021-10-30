@@ -2,7 +2,7 @@ body {
     font-size: 1.2rem;
 }
 header {
-    background-color: pink;
+    /* background-color: pink; */
 }
 .icon {
     max-width: 3rem;
@@ -19,7 +19,7 @@ header {
 .title_motto {
     margin-top: 2em;
     display: block;
-    background-color: lightblue;
+    /* background-color: lightblue; */
 }
 .hero_img {
     max-width: 70rem;
@@ -57,6 +57,16 @@ header {
     margin-left: 85%;
 }
 
+footer {
+    background-color: pink;
+    display: block;
+}
+.phone {
+    display: inline;
+}
+.email {
+    display: inline;
+}
 @media only screen and (min-width: 32.5em) {
     .navigation {
         display: flex;
