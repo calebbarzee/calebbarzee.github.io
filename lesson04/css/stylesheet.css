@@ -1,36 +1,32 @@
 body {
     font-size: 1.2rem;
 }
-header {
-}
+/* header {
+} */
 header .head_non_nav {
-	text-align: center;
+    text-align: center;
 }
 header .head_non_nav img {
     max-width: 10rem;
-	vertical-align: middle;
+    vertical-align: middle;
 }
 header .head_non_nav .title_motto {
     display: inline-block;
-	vertical-align: middle;
+    vertical-align: middle;
 }
-header nav {
-}
-header nav ul.navigation {
+/* header nav {
+} */
+.navigation {
     list-style: none;
 }
-header nav ul.navigation li:first-child {
+.navigation li:first-child {
     display: block;
 }
-header nav .navigation li {
+.navigation li {
     display: none;
 }
 .icon {
     max-width: 3rem;
-}
-.nav_container {
-    display: block;
-    max-width: 80%;
 }
 .hero_img {
     max-width: 70rem;
@@ -67,11 +63,13 @@ footer {
 }
 @media only screen and (min-width: 32.5em) {
     .navigation {
-        display: flex;
+        display: block;
+        text-align: center;
     }
     .navigation li {
-        display: block; /* change state in small view */
-        flex: 1 1 auto;
+        display: inline-block; /* change state in small view */
+        padding: 0 3%;
+        font-size: 90%;
     }
     .navigation a {
         text-align: center;
