@@ -25,7 +25,6 @@ header nav ul.navigation li:first-child {
 header nav .navigation li {
     display: none;
 }
-
 .icon {
     max-width: 3rem;
 }
