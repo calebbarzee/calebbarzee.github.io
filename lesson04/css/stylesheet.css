@@ -8,11 +8,11 @@ header {
     max-width: 3rem;
 }
 .head_non_nav {
-    margin: 0 auto;
+    margin: 0 25%;
     padding: 1em 0em 3em;
     display: block;
 }
-.head_non_nav img {
+.logo {
     float: left;
     max-width: 10rem;
 }
