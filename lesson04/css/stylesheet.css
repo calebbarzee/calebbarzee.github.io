@@ -2,40 +2,39 @@ body {
     font-size: 1.2rem;
 }
 header {
-    /* background-color: pink; */
 }
+header .head_non_nav {
+	text-align: center;
+}
+header .head_non_nav img {
+    max-width: 10rem;
+	vertical-align: middle;
+}
+header .head_non_nav .title_motto {
+    display: inline-block;
+	vertical-align: middle;
+}
+header nav {
+}
+header nav ul.navigation {
+    list-style: none;
+}
+header nav ul.navigation li:first-child {
+    display: block;
+}
+header nav .navigation li {
+    display: none;
+}
+
 .icon {
     max-width: 3rem;
-}
-.head_non_nav {
-    margin: 0 25%;
-    padding: 1em 0em 3em;
-    display: block;
-}
-.head_non_nav img {
-    float: left;
-    max-width: 10rem;
-}
-.title_motto {
-    margin-top: 2em;
-    display: block;
-    /* background-color: lightblue; */
-}
-.hero_img {
-    max-width: 70rem;
 }
 .nav_container {
     display: block;
     max-width: 80%;
 }
-.navigation {
-    list-style: none;
-}
-.navigation li:first-child {
-    display: block;
-}
-.navigation li {
-    display: none;
+.hero_img {
+    max-width: 70rem;
 }
 .responsive li {
     display: block;
