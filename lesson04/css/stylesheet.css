@@ -2,13 +2,13 @@ body {
     font-size: 1.2rem;
 }
 header {
-    /* background-color: pink; */
+    background-color: pink;
 }
 .icon {
     max-width: 3rem;
 }
 .head_non_nav {
-    margin: 0 25%;
+    margin: 0 auto;
     padding: 1em 0em 3em;
     display: block;
 }
