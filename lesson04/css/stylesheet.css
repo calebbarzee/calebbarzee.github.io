@@ -12,10 +12,10 @@ header .head_non_nav img {
 }
 header .head_non_nav .title_motto {
     display: inline-block;
-    vertical-align: middle;
+	vertical-align: middle;
 }
-/* header nav {
-} */
+
+/* Narrow window */
 .navigation {
     list-style: none;
 }
@@ -25,17 +25,8 @@ header .head_non_nav .title_motto {
 .navigation li {
     display: none;
 }
-.icon {
-    max-width: 3rem;
-}
-.hero_img {
-    max-width: 70rem;
-}
-.responsive li {
-    display: block;
-}
-.navigation a {
-    display: block;
+.navigation li a {
+	display: block;
     padding: 0.75rem;
     text-align: right;
     text-decoration: none;
@@ -43,13 +34,41 @@ header .head_non_nav .title_motto {
     font-weight: 700;
     transition: 0.5s;
 }
-.navigation a:hover {
+.navigation li a:hover {
     color: white;
     background-color: black;
+}
+@media only screen and (min-width: 32.5em) {
+	/* Wide window */
+	.navigation {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+	.navigation li {
+		display: inline;
+	}
+    .navigation li a {
+		display: inline;
+    }
+}
+
+.icon {
+    max-width: 3rem;
+}
+*/
+.hero_img {
+    max-width: 70rem;
+}
+/*
+.responsive li {
+    display: block;
 }
 .menu_button {
     margin-left: 85%;
 }
+*/
 
 footer {
     background-color: pink;
@@ -60,21 +79,4 @@ footer {
 }
 .email {
     display: inline;
-}
-@media only screen and (min-width: 32.5em) {
-    .navigation {
-        display: block;
-        text-align: center;
-    }
-    .navigation li {
-        display: inline-block; /* change state in small view */
-        padding: 0 3%;
-        font-size: 90%;
-    }
-    .navigation a {
-        text-align: center;
-    }
-    .navigation li:first-child {
-        display: none;
-    }
 }
