@@ -67,8 +67,8 @@
                     <input type="date" name="date" required>
                 <div>
                     <label for="list">Storm Type:</label>
-                      <input list="lists" name="list" id="list"/>
-                      <datalist id="lists">
+                      <input list="weather_type" name="weather_type" id="weather_type"/>
+                      <datalist id="weather_type_list">
                         <option value="Flash Flood"></option>
                         <option value="Hail"></option>
                         <option value="Hurricane"></option>
@@ -79,7 +79,7 @@
   
                     <label  for="rating">Storm Severity Rating: </label>
                         <input type="range"  value="1" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id='ratingvalue'>1</span>
+                        <span id='rating_value'>1</span>
                     <datalist >
                         <option value="1"></option>
                         <option value="2"></option>
@@ -98,27 +98,27 @@
                     <label >Storm Region</label>
                         
                         <select name="region">
-                            <option value="select" select disabled>Select Region &#9662;</option>
+                            <option value="select" select disabled>Select Region ;</option>
                             <option value="preston">Preston</option>
-                            <option value="sodasprings">Soda Springs</option>
-                            <option value="fishhaven">Fish Haven</option>
+                            <option value="soda_springs">Soda Springs</option>
+                            <option value="fish_haven">Fish Haven</option>
                         </select>
                 </div>
             </fieldset>
 
             <fieldset id="danger">
                 <legend><h2>Are you in danger?</h2></legend>
-                <div class="surroundDanger">
-                    <label class="indanger">
+                <div class="danger_container">
+                    <label class="in_danger">
                         <input type="radio" name="danger" value="no">No
                     </label>
                     
-                    <label class="indanger">
+                    <label class="in_danger">
                         <input type="radio" name="danger" value="maybe">Maybe
                     </label>
                     
-                    <label class="indanger">
-                        <input type="radio" name="danger" value="Yes">Yes
+                    <label class="in_danger">
+                        <input type="radio" name="danger" value="yes">Yes
                     </label>
                 </div>
                 
@@ -133,7 +133,7 @@
             </fieldset>
             
 
-            <input type="submit" value="Send Your Storm Report" class="submit">
+            <input type="submit" value="Submit Storm Report" class="submit">
         </form>
     </main>
     <footer>
