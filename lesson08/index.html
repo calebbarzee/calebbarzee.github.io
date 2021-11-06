@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo:wght@600&family=Imbue:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/stylesheet.css">
     <script src="js/responsive_menu.js" defer></script>
     <script src="js/current_date.js" defer></script>
+    <script src="js/form_value_adjust.js" defer></script>
     <title>Sonorous Forecasts</title>
 </head>
 <body>
@@ -38,7 +44,7 @@
         </h2>
         <h4>Please fill out this form to report a storm.</h4>
 
-        <form method="get" action="thanks.html">
+        <form method="get" action="thank_you_page.html">
             <fieldset>
                 <legend><h2>Contact Information</h2></legend>
                 <label>Full Name *</label>
@@ -71,11 +77,10 @@
                       </datalist>
                     </div>
   
-                    <label  for="rating">Storm Severity Rating: &nbsp;&nbsp;&nbsp;</label>
-                        <input type="range"  value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                        <span id='ratingvalue'>5</span>
+                    <label  for="rating">Storm Severity Rating: </label>
+                        <input type="range"  value="1" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id='ratingvalue'>1</span>
                     <datalist >
-                        <option value="0"></option>
                         <option value="1"></option>
                         <option value="2"></option>
                         <option value="3"></option>
@@ -123,7 +128,7 @@
             <fieldset>
                 <legend><h2>Additional Information or Comments: </h2></legend>
                 <label>
-                    <textarea name="additional" rows="4" cols="30"></textarea>
+                    <textarea name="additional" rows="3" cols="20"></textarea>
                 </label>
             </fieldset>
             
