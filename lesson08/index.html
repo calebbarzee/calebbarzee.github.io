@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="js/responsive_menu.js" defer></script>
+    <script src="js/current_date.js" defer></script>
+    <title>Sonorous Forecasts</title>
+</head>
+<body>
+    <header>
+        <div class="head_non_nav">
+            <img class="logo" src="assets/sonorous-forecasts-logo.png" alt="Sonorous Forecasts logo">
+            <div class="title_motto">
+                <h2 class="website_title">Sonorous Forecasts</h2>
+                <h4 class="website_motto">Disseminating weather information for you.</h4>
+            </div>
+        </div>
+        <nav>
+            <ul class="navigation responsive">
+            <li>
+                <img class="menu_button icon" src="assets/hamburger_menu.png" alt="Hamburger Menu Icon">
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="../lesson07/index.html">Gallery</a></li>
+        </ul></nav>
+    </header>
+<body>
+    <main>
+        <h2>
+            Storm Center
+        </h2>
+        <h4>Please fill out this form to report a storm.</h4>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend><h2>Contact Information</h2></legend>
+                <label>Full Name *</label>
+                    <input type="text" pattern="[a-z A-Z]{5,}" class="form-control" name="name" title="Must be 5 or more alphabet characters." required>
+                <br>
+                <label>Email</label>
+                    <input type="email" name="email" placeholder="placeholder@gmail.com">
+                <br>
+                <label>Phone Number *</label>
+                    <input type="tel" name="tel" required>
+                <br>
+                <label>Zip Code *</label>
+                    <input type="number" name="zip" required>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend><h2>Storm Information</h2></legend>
+                <label>Storm Date *</label>
+                    <input type="date" name="date" required>
+                <div>
+                    <label for="list">Storm Type:</label>
+                      <input list="lists" name="list" id="list"/>
+                      <datalist id="lists">
+                        <option value="Flash Flood"></option>
+                        <option value="Hail"></option>
+                        <option value="Hurricane"></option>
+                        <option value="Thunderstorm"></option>
+                        <option value="Tornado"></option>
+                      </datalist>
+                    </div>
+  
+                    <label  for="rating">Storm Severity Rating: &nbsp;&nbsp;&nbsp;</label>
+                        <input type="range"  value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id='ratingvalue'>5</span>
+                    <datalist >
+                        <option value="0"></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        <option value="6"></option>
+                        <option value="7"></option>
+                        <option value="8"></option>
+                        <option value="9"></option>
+                        <option value="10"></option>
+                    </datalist>
+                
+                
+                <div>
+                    <label >Storm Region</label>
+                        
+                        <select name="region">
+                            <option value="select" select disabled>Select Region &#9662;</option>
+                            <option value="preston">Preston</option>
+                            <option value="sodasprings">Soda Springs</option>
+                            <option value="fishhaven">Fish Haven</option>
+                        </select>
+                </div>
+            </fieldset>
+
+            <fieldset id="danger">
+                <legend><h2>Are you in danger?</h2></legend>
+                <div class="surroundDanger">
+                    <label class="indanger">
+                        <input type="radio" name="danger" value="no">No
+                    </label>
+                    
+                    <label class="indanger">
+                        <input type="radio" name="danger" value="maybe">Maybe
+                    </label>
+                    
+                    <label class="indanger">
+                        <input type="radio" name="danger" value="Yes">Yes
+                    </label>
+                </div>
+                
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend><h2>Additional Information or Comments: </h2></legend>
+                <label>
+                    <textarea name="additional" rows="4" cols="30"></textarea>
+                </label>
+            </fieldset>
+            
+
+            <input type="submit" value="Send Your Storm Report" class="submit">
+        </form>
+    </main>
+    <footer>
+        <h5>Contact Information</h5>
+        <div class="phone">
+        <img class="contact_icon, icon" src="assets/phone_icon.png" alt="Image of phone">
+        <p class="contact_info">555-555-5555</p>
+        </div>
+        <div class="email">
+        <img class="contact_icon, icon" src="assets/email_icon.png" alt="Image of email letter">
+        <p class="contact_info">nonsense@example.com</p>
+        </div>
+        <div class="footer_map"></div>
+        <span id="current_date"></span>
+    </footer>
+</body>
+</html>
