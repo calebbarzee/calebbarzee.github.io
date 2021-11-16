@@ -1,0 +1,12 @@
+Open Weather: e3f28000665e53058b6110dbbe2f5365
+URL api call: api.openweathermap.org/data/2.5/weather?q=rexburg&appid=e3f28000665e53058b6110dbbe2f5365
+
+
+let appid = "e3f28000665e53058b6110dbbe2f5365"
+let city = "rexburg"
+let state_code = "ID"
+let country_code = "USA"
+let units = "metric"
+
+
+URL api call using variables: `api.openweathermap.org/data/2.5/weather?q={city},{state_code},{country_code}&appid={API key}&units=${units}`
