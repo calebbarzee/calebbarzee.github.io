@@ -1,6 +1,10 @@
 body {
     font-size: 1.2rem;
 }
+.page_container {
+    margin: 0 auto;
+    max-width: 80%;
+}
 /* header {
 } */
 header .head_non_nav {
@@ -38,7 +42,36 @@ header .head_non_nav .title_motto {
     color: white;
     background-color: black;
 }
-@media only screen and (min-width: 32.5em) {
+.show_list {
+    display: block;
+}
+.responsive {
+    display: none;
+}
+.show_list li {
+    display: block;
+}
+img {
+    max-width: 80%;
+}
+
+.contact_container {
+    /* background-color: pink; */
+    font-size: 1rem;
+    display: block;
+}
+.contact_container h5 {
+    font-size: 1.2rem;
+}
+.email,
+.phone {
+    display: flex;
+}
+.date_container {
+    text-align: center;
+}
+
+@media only screen and (min-width: 45em) {
     /* Wide window */
     .navigation {
         text-align: center;
@@ -53,29 +86,13 @@ header .head_non_nav .title_motto {
         display: inline;
     }
 }
+.responsive {
+    display: block;
+}
 
 .icon {
     max-width: 3rem;
 }
 */ .hero_img {
     max-width: 70rem;
-}
-/*
-.responsive li {
-    display: block;
-}
-.menu_button {
-    margin-left: 85%;
-}
-*/
-
-footer {
-    /* background-color: pink; */
-    display: block;
-}
-.phone {
-    display: inline;
-}
-.email {
-    display: inline;
 }

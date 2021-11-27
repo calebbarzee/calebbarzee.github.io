@@ -1,18 +1,23 @@
 const menu_button = document.querySelector('.menu_button');
-const mainnav = document.querySelector('.navigation')
+const nav = document.querySelector('.navigation')
 
 
-menu_button.addEventListener('click',function() {
-		mainnav.classList.toggle('responsive')
-		},false);
+menu_button.addEventListener('click', add_show_list, false);
 
 window.onresize = function() {
 	if(window.innerWidth > 760) 
-		mainnav.classList.remove('responsive')};
+		nav.classList.remove('responsive')};
 		
-menu_button.addEventListener('mouseover', change_to_black ,false);
+function add_show_list() {
+	// console.log("add_show_list success")
+	nav.classList.toggle('show_list')
+}
 
-menu_button.addEventListener('mouseout', change_to_white ,false);
+
+
+menu_button.addEventListener('mouseover' ,change_to_black, false);
+
+menu_button.addEventListener('mouseout' ,change_to_white, false);
 
 function change_to_black() {
 	menu_button.removeAttribute("src", "assets/hamburger_menu.png");
