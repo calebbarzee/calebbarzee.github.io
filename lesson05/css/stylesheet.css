@@ -1,0 +1,303 @@
+/* small css also applied to medium and large unless specified otherwise */
+body {
+    font-size: 1rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 1.2rem;
+}
+a {
+    font-size: 1.2rem;
+}
+.page_container {
+    width: 100%;
+}
+.banner {
+    background-color: #fca311;
+    font-size: 1.5rem;
+}
+header {
+    background-color: #ade8f4;
+    display: block;
+    padding-top: 1rem;
+}
+header .head_non_nav {
+    /* text-align: center; */
+    display: inline;
+}
+header .head_non_nav img {
+    float: left;
+    display: inline;
+    position: relative;
+    width: 15%;
+    vertical-align: middle;
+}
+header .head_non_nav .title_motto {
+    display: inline;
+    vertical-align: middle;
+}
+nav {
+    display: inline;
+    position: relative;
+}
+.navigation {
+    list-style: none;
+}
+.menu_button {
+    width: 10%;
+}
+.navigation li:first-child {
+    display: inline;
+    position: relative;
+    right: -90%;
+    top: -5rem;
+}
+.navigation li {
+    display: none;
+}
+.navigation li a {
+    display: block;
+    padding: 0.75rem;
+    text-align: right;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+}
+.navigation li a:hover {
+    color: white;
+    background-color: black;
+}
+.navigation li a:active {
+    text-decoration: underline;
+}
+.current_page {
+    text-decoration: underline;
+}
+.show_list {
+    display: block;
+}
+.responsive {
+    display: none;
+}
+.show_list li {
+    display: block;
+}
+.page_title {
+    font-size: 2rem;
+}
+img {
+    width: 100%;
+}
+.forecast_heading {
+    font-size: 1.5rem;
+    background-color: #e5e5e5;
+    text-align: center;
+    padding: 2rem 0;
+}
+.five_day_forecast {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 2rem 0;
+}
+article {
+    background-color: #e5e5e5;
+    padding: 2rem;
+    padding: 1rem 1rem 10rem;
+}
+.article_heading {
+    font-size: 1.5rem;
+}
+.article_p_and_img_container {
+    display: flex;
+    flex-direction: column-reverse;
+}
+.article_paragraph,
+.article_image {
+    height: auto;
+}
+.article_image {
+    display: block;
+    width: 100%;
+}
+
+footer {
+    background-color: #ade8f4;
+}
+.contact_container {
+    /* background-color: pink; */
+    font-size: 1rem;
+    display: block;
+    margin-left: 2rem;
+}
+.contact_container h5 {
+    font-size: 1.2rem;
+}
+.icon {
+    width: 8%;
+}
+.email,
+.phone {
+    display: flex;
+}
+.social_media_icons_div {
+    display: none;
+}
+/* .footer_map {
+    display: block;
+} */
+.footer_map_img {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+}
+.date_container {
+    padding: 1rem;
+    text-align: center;
+}
+.footer_bar {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem 0;
+}
+.footer_bar ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    margin: auto 0;
+}
+.footer_bar a {
+    color: #ffffff;
+}
+.footer_bar a:hover {
+    color: #fca311;
+}
+
+/* medium to large css */
+@media only screen and (min-width: 800px) {
+    body {
+        font-size: 1.2rem;
+    }
+    header {
+        width: 100%;
+
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+    header .head_non_nav {
+        position: relative;
+        right: 5%;
+    }
+    header .head_non_nav img {
+        max-width: 10rem;
+        vertical-align: middle;
+        position: relative;
+        left: 30%;
+        top: -0.5rem;
+    }
+    header .head_non_nav .title_motto {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    header .head_non_nav .title_motto h2 {
+        font-size: 2rem;
+    }
+    header .head_non_nav .title_motto h4 {
+        font-size: 1.5rem;
+    }
+    .navigation {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .navigation li {
+        display: inline;
+    }
+    .navigation li a {
+        display: inline;
+    }
+    .responsive {
+        display: block;
+    }
+    .current_page {
+        text-decoration: underline;
+    }
+    main {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+    .weather_summary {
+        width: fit-content;
+        background-color: rgba(229, 229, 229, 0.5);
+        padding: 0 0.5rem 0.5rem;
+        z-index: 100;
+        position: relative;
+        top: -30rem;
+    }
+    .forecast_heading {
+        background-color: white;
+        text-align: left;
+    }
+    .article_p_and_img_container {
+        display: inline;
+    }
+    .article_paragraph {
+        text-align: left;
+    }
+    .article_image {
+        display: inline;
+        width: 30%;
+        float: right;
+        position: relative;
+        bottom: 0;
+    }
+    .footer_container {
+        display: block;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .contact_social_container {
+        display: inline;
+        position: relative;
+        right: -70%;
+        bottom: -15rem;
+    }
+    .contact_container {
+        padding-bottom: 1rem;
+    }
+    .contact_container h5 {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+    .contact_icon {
+        width: 5%;
+    }
+    .social_media_icons_div {
+        display: inline;
+    }
+    .social_media_icon {
+        width: 5%;
+    }
+    .footer_map {
+        display: inline;
+        position: relative;
+    }
+    .footer_map_img {
+        margin: 0;
+        width: 60%;
+    }
+    .footer_bar {
+        background-color: #000000;
+        height: 2rem;
+        width: 100%;
+    }
+}
