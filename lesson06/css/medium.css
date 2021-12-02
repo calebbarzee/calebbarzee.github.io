@@ -96,9 +96,10 @@
     }
     .weather_summary {
         grid-column: 3/5;
-        grid-row: 4/8;
+        grid-row: 4/9;
         background-color: rgba(229, 229, 229, 0.5);
         width: fit-content;
+        height: fit-content;
     }
     .forecast_heading {
         grid-column: 2/9;

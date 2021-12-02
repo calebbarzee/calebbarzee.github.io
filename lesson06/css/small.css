@@ -1,11 +1,20 @@
 /* small css also applied to medium and large unless specified otherwise */
+@import url('https://fonts.googleapis.com/css2?family=Arimo&family=Ubuntu:wght@700&display=swap');
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
+    font-family: 'Ubuntu', sans-serif;
     font-size: 1.2rem;
+}
+p,
+a,
+th,
+td {
+    font-family: 'Arimo', sans-serif;
 }
 a {
     font-size: 1.2rem;

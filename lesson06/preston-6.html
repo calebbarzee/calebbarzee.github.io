@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" defer></script>
+    <script src="js/webfont_load.js" defer></script>
     <script src="js/responsive_menu.js" defer></script>
+    <script src="js/weather_summary.js" defer></script>
+    <script src="js/swap_hero_img.js" defer></script>
     <script src="js/date_scripts.js" defer></script>
     <title>Sonorous Forecasts</title>
 </head>
@@ -32,7 +36,7 @@
     <main>
         <h3 class="page_title">Preston</h3>
         <!-- full width image -->
-        <img class="hero_img" src="assets/hero_img/preston_hero_img_lrg.png" alt="Image of Preston, Idaho">
+        <img id="hero_img" class="hero_img" src="placeholder" alt="Image of Preston, Idaho">
         <div class="weather_summary">
             <h3 class="weather_summary_heading">Weather Summary</h3>
             <table>
@@ -46,7 +50,7 @@
                   </tr>
                   <tr>
                     <th>Wind Chill:</th>
-                    <td class="weather_summary_td3">°F</td>
+                    <td class="weather_summary_td3"></td>
                   </tr>
                   <tr>
                     <th>Humidity:</th>
