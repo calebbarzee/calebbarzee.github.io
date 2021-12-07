@@ -7,7 +7,6 @@
     .article_background {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(20, 1em);
     }
     /* Direct children of article_background start*/
     .article_heading {
