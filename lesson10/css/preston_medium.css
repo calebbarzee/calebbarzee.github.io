@@ -1,0 +1,364 @@
+/* medium to large css */
+@media only screen and (min-width: 700px) {
+    /* small css also applied to medium and large unless specified otherwise */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 1.5rem;
+    }
+    nav a {
+        font-size: 1.5rem;
+    }
+    body {
+        max-width: 100%;
+        display: block;
+    }
+    .banner {
+        display: block;
+        background-color: #fca311;
+        font-size: 1.5rem;
+    }
+    header {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(5, 2em);
+        gap: 1em;
+        background-color: #ade8f4;
+    }
+    /* Direct children of header start*/
+    .logo {
+        grid-column: 1/3;
+        grid-row: 2/5;
+        width: 100%;
+        align-self: center;
+    }
+    .website_title {
+        grid-column: 3/10;
+        grid-row: 1/3;
+        justify-self: center;
+        align-self: flex-start;
+        font-size: 2rem;
+    }
+    .website_motto {
+        grid-column: 3/10;
+        grid-row: 3/4;
+        justify-self: center;
+        align-self: flex-start;
+    }
+    .navigation {
+        grid-column: 1/10;
+        grid-row: 6/10;
+        text-align: center;
+        justify-content: center;
+    }
+    /* Direct children of header end*/
+
+    /* Navigation menu start */
+    .menu_button {
+        display: none;
+    }
+    .navigation a {
+        display: inline;
+        padding: 0.75rem;
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        transition: 0.5s;
+    }
+    .navigation a:hover {
+        color: white;
+        background-color: black;
+    }
+    .navigation a:active {
+        text-decoration: underline;
+    }
+    /* Navigation menu end */
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(30, 2em);
+        gap: 0.5em;
+    }
+    /* Direct children of main start*/
+    .page_title {
+        grid-column: 2/5;
+        grid-row: 1/3;
+        font-size: 2rem;
+    }
+    .hero_img {
+        grid-column: 2/9;
+        grid-row: 3/18;
+        width: 100%;
+    }
+    .weather_summary {
+        grid-column: 3/5;
+        grid-row: 4/9;
+        background-color: rgba(229, 229, 229, 0.5);
+        width: fit-content;
+        height: fit-content;
+    }
+    .forecast_heading {
+        grid-column: 2/9;
+        grid-row: 18/20;
+        font-size: 1.5rem;
+        background-color: #e5e5e5;
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .five_day_forecast {
+        grid-column: 2/9;
+        grid-row: 20/30;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        padding: 2rem 0;
+        text-align: center;
+    }
+    /* Direct children of main end*/
+
+    /* Styling of five day forecast start*/
+    .weather_icon {
+        width: 70%;
+    }
+    /* Styling of five day forecast end*/
+
+    article {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(7, 2em);
+        gap: 0.5em;
+        background-color: #ffffff;
+    }
+    .article_background {
+        grid-column: 2/9;
+        grid-row: 1/8;
+        padding: 0 2em;
+        background-color: #e5e5e5;
+    }
+    /* Direct children of article start*/
+    .article_heading {
+        display: block;
+        font-size: 2rem;
+    }
+    .article_paragraph {
+        display: block;
+        font-size: 1.2rem;
+    }
+    .article_image {
+        display: inline;
+        float: right;
+        width: 80%;
+    }
+    /* Direct children of article end*/
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(8, 2em);
+        gap: 0.5em;
+        background-color: #ade8f4;
+    }
+    /* Direct children of footer start*/
+    .contact_title {
+        grid-column: 7/9;
+        grid-row: 3/3;
+        font-size: 1.5rem;
+        align-self: center;
+    }
+    .contact_info_container {
+        grid-column: 7/9;
+        grid-row: 3/6;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(6, 2em);
+        gap: 0.3em;
+    }
+    /* Direct children of contact_info_container start */
+
+    .contact_icon {
+        width: 40%;
+    }
+    .address_img {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .phone_img {
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+    .email_img {
+        grid-column: 1/2;
+        grid-row: 5/6;
+    }
+    .contact_text {
+        font-size: 1.2rem;
+        align-self: center;
+    }
+    .address_text {
+        grid-column: 2/6;
+        grid-row: 3/4;
+    }
+    .phone_text {
+        grid-column: 2/6;
+        grid-row: 4/5;
+    }
+    .email_text {
+        grid-column: 2/6;
+        grid-row: 5/6;
+    }
+    /* Direct children of contact_info_container end */
+    .social_media_icons_container {
+        grid-column: 7/9;
+        grid-row: 8/10;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* Direct children of social_media_icons_div start */
+    .social_media_icon {
+        display: block;
+        width: 70%;
+    }
+    /* Direct children of social_media_icons_div end */
+
+    .footer_map {
+        grid-column: 2/6;
+        grid-row: 2/9;
+        width: 100%;
+    }
+    #current_date {
+        grid-column: 4/7;
+        grid-row: 10/12;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .footer_bar {
+        grid-column: 1/11;
+        grid-row: 12/13;
+        display: grid;
+        grid-template-columns: 30% 33% 30%;
+        color: #ffffff;
+        background-color: #000000;
+        text-align: center;
+    }
+    .footer_bar a {
+        color: #ffffff;
+    }
+    .footer_bar a:hover {
+        color: #fca311;
+    }
+    /* Direct children of footer end*/
+
+    /* old css start */
+    /* body {
+        font-size: 1.2rem;
+    }
+    header {
+        width: 100%;
+
+        display: inline-block;
+        text-align: center;
+        padding-bottom: 0.5rem;
+    }
+    header .head_non_nav {
+        position: relative;
+        right: 5%;
+    }
+    header .head_non_nav img {
+        max-width: 10rem;
+        vertical-align: middle;
+        position: relative;
+        left: 30%;
+        top: -0.5rem;
+    }
+    header .head_non_nav .title_motto {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    header .head_non_nav .title_motto h2 {
+        font-size: 2rem;
+    }
+    header .head_non_nav .title_motto h4 {
+        font-size: 1.5rem;
+    }
+ 
+    .current_page {
+        text-decoration: underline;
+    }
+    main {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+    }
+    .weather_summary {
+        width: fit-content;
+        background-color: rgba(229, 229, 229, 0.5);
+        padding: 0 0.5rem 0.5rem;
+        z-index: 100;
+        position: relative;
+        top: -30rem;
+    }
+    .forecast_heading {
+        background-color: white;
+        text-align: left;
+    }
+    .article_p_and_img_container {
+        display: inline;
+    }
+    .article_paragraph {
+        text-align: left;
+    }
+    .article_image {
+        display: inline;
+        width: 30%;
+        float: right;
+        position: relative;
+        bottom: 0;
+    }
+    .footer_container {
+        display: block;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .contact_social_container {
+        display: inline;
+        position: relative;
+        right: -70%;
+        bottom: -15rem;
+    }
+    .contact_container {
+        padding-bottom: 1rem;
+    }
+    .contact_container h5 {
+        font-size: 1.8rem;
+        margin-bottom: 0;
+    }
+    .contact_icon {
+        width: 5%;
+    }
+    .social_media_icons_div {
+        grid-column: 3/6;
+        grid-row: 9/11;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .social_media_icon {
+        width: 5%;
+    }
+    .footer_map {
+        display: inline;
+        position: relative;
+    }
+    .footer_map_img {
+        margin: 0;
+        width: 60%;
+    }
+    .footer_bar {
+        background-color: #000000;
+        height: 2rem;
+        width: 100%;
+    } */
+    /* old css end */
+}

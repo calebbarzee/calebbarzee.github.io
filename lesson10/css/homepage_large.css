@@ -1,0 +1,76 @@
+@media only screen and (min-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3em;
+    }
+    .article_background {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(20, 1.5em);
+    }
+    /* Direct children of article_background start*/
+    .article_heading {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .article_subheading {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .article_span {
+        font-size: 1rem;
+    }
+    .article_img {
+        width: 100%;
+    }
+    #preston_heading {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    #preston_subheading {
+        grid-column: 1/2;
+        grid-row: 3/7;
+    }
+    #preston_span {
+        grid-column: 1/2;
+        grid-row: 7/13;
+    }
+    #preston_img {
+        grid-column: 1/2;
+        grid-row: 13/21;
+    }
+    #fish_haven_heading {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    #fish_haven_subheading {
+        grid-column: 1/2;
+        grid-row: 3/7;
+    }
+    #fish_haven_span {
+        grid-column: 1/2;
+        grid-row: 7/13;
+    }
+    #fish_haven_img {
+        grid-column: 1/2;
+        grid-row: 13/21;
+    }
+    #soda_springs_heading {
+        grid-column: 1/2;
+        grid-row: 1/3;
+    }
+    #soda_springs_subheading {
+        grid-column: 1/2;
+        grid-row: 3/7;
+    }
+    #soda_springs_span {
+        grid-column: 1/2;
+        grid-row: 7/13;
+    }
+    #soda_springs_img {
+        grid-column: 1/2;
+        grid-row: 13/21;
+    }
+    /* Direct children of article_background end*/
+}
