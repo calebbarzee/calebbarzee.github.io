@@ -11,9 +11,9 @@
     <script src="js/webfont_load.js" defer></script>
     <script src="js/responsive_menu.js" defer></script>
     <script src="js/weather_summary.js" defer></script>
-    <script src="js/swap_hero_img.js" defer></script>
     <script src="js/date_scripts.js" defer></script>
-    <title>Sonorous Forecasts</title>
+    <script src="js/town_page_events.js" defer></script>
+    <title>Sonorous Forecasts Soda Springs</title>
 </head>
 <body>
     <header class="">
@@ -33,7 +33,7 @@
     <main>
         <h3 class="page_title">Soda Springs</h3>
         <!-- full width image -->
-        <img id="hero_img" class="hero_img" src="" alt="Image of Preston, Idaho">
+        <img id="hero_img" class="hero_img" src="assets/hero_img/soda_springs_hero.jpeg" alt="Image of Soda Springs, Idaho">
         <div class="weather_summary">
             <h3 class="weather_summary_heading">Weather Summary</h3>
             <table>
@@ -58,6 +58,9 @@
                     <td class="weather_summary_td5"></td>
                   </tr>
             </table>
+        </div>
+        <div class="upcoming_events">
+            <span id="events_span"><strong>Upcoming Events:</strong> </span>
         </div>
         <h3 class="forecast_heading">Five Day Forecast</h3>
         <div class="five_day_forecast">
@@ -92,10 +95,7 @@
         <div class="article_background">
             <h3 class="article_heading">Article Heading</h3>
             <img class="article_image" src="assets/article_img/article_image.jpg" alt="A landscape photo of pine trees and mountains.">
-            <p class="article_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Hic dicta libero soluta possimus itaque veritatis temporibus perspiciatis, 
-            molestiae mollitia tempora, earum laborum. Tenetur culpa voluptate voluptatum
-            nobis incidunt inventore laboriosam.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            <p class="article_paragraph">Soda Springs, Idaho was a pit stop for Oregon Trail pioneers and fur traders while traveling through Eastern Idaho. Often referred to as the 'Oregon Trail Oasis,' it's now known as Soda Springs, a town of just over 3,000 people in Caribou County. As one of the main water sites along the Oregon Trail, travelers would often stop to try the water at the sulfurous springs, which bubbles like boiling water on the surface and emits a destructive, rotten egg smell when the wind is blowing just right.
             </p>
         </div>
     </article>
@@ -114,8 +114,9 @@
             <img class="facebook_img social_media_icon" src="assets/social_icons/facebook_icon.png" alt="Facebook Icon">
             <img class="youtube_img social_media_icon" src="assets/social_icons/youtube_icon.png" alt="Youtube Icon">
         </div>
-        <iframe class="footer_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1638410195439!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        
         <span id="current_date"></span>
+        <iframe class="footer_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46943.96064633286!2d-111.62379147650239!3d42.661407516812865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8755968bb0047ae5%3A0x9d3970a1a6df8e12!2sSoda%20Springs%2C%20ID%2083276!5e0!3m2!1sen!2sus!4v1639034149087!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
     <div class="footer_bar">
             <p id="copyrightInfo"> &#169; <span id="copyrightYear"></span> Caleb Barzee

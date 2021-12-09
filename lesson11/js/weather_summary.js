@@ -112,7 +112,7 @@ function display_weather(five_days) {
         // console.log(tag_class)
         let day_elements = document.querySelector(tag_class).children;
         day_elements[0].innerHTML = five_days[i].name;
-        day_elements[1].innerHTML = five_days[i].high_temp;
+        day_elements[1].innerHTML = five_days[i].high_temp + "°F";
         day_elements[2].setAttribute("src", icon_src);   
     }
 }
@@ -142,4 +142,12 @@ function get_icon_src(icon_id) {
 }
 
 
-get_preston_weather();
+if (document.querySelector(".page_title").textContent == "Preston") {
+    get_preston_weather();
+}
+else if (document.querySelector(".page_title").textContent == "Fish Haven") {
+    get_fish_haven_weather();
+}
+else if (document.querySelector(".page_title").textContent == "Soda Springs") {
+    get_soda_springs_weather();
+}

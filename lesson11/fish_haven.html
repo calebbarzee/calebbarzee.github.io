@@ -11,9 +11,9 @@
     <script src="js/webfont_load.js" defer></script>
     <script src="js/responsive_menu.js" defer></script>
     <script src="js/weather_summary.js" defer></script>
-    <script src="js/swap_hero_img.js" defer></script>
     <script src="js/date_scripts.js" defer></script>
-    <title>Sonorous Forecasts</title>
+    <script src="js/town_page_events.js" defer></script>
+    <title>Sonorous Forecasts Fish Haven</title>
 </head>
 <body>
     <header class="">
@@ -33,7 +33,7 @@
     <main>
         <h3 class="page_title">Fish Haven</h3>
         <!-- full width image -->
-        <img id="hero_img" class="hero_img" src="" alt="Image of Preston, Idaho">
+        <img id="hero_img" class="hero_img" src="assets/hero_img/fish_haven_hero.jpeg" alt="Image of Preston, Idaho">
         <div class="weather_summary">
             <h3 class="weather_summary_heading">Weather Summary</h3>
             <table>
@@ -58,6 +58,9 @@
                     <td class="weather_summary_td5"></td>
                   </tr>
             </table>
+        </div>
+        <div class="upcoming_events">
+            <span id="events_span"><strong>Upcoming Events:</strong> </span>
         </div>
         <h3 class="forecast_heading">Five Day Forecast</h3>
         <div class="five_day_forecast">
@@ -90,12 +93,9 @@
     </main>
     <article>
         <div class="article_background">
-            <h3 class="article_heading">Article Heading</h3>
+            <h3 class="article_heading">Why you should live in Fish Haven</h3>
             <img class="article_image" src="assets/article_img/article_image.jpg" alt="A landscape photo of pine trees and mountains.">
-            <p class="article_paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Hic dicta libero soluta possimus itaque veritatis temporibus perspiciatis, 
-            molestiae mollitia tempora, earum laborum. Tenetur culpa voluptate voluptatum
-            nobis incidunt inventore laboriosam.Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            <p class="article_paragraph">Fish Haven, Idaho is an undiscovered paradise. Most people who drive by recognize the raw beauty of a place ringed by high desert mountains and bordered by the shores of a vast natural lake. In winter the hills outside this small paradise echo with the sharp whine of snow machines and in the summer thousands of tourists ply the lake's bright blue waters with water skis or fishing poles.                
             </p>
         </div>
     </article>
@@ -114,7 +114,7 @@
             <img class="facebook_img social_media_icon" src="assets/social_icons/facebook_icon.png" alt="Facebook Icon">
             <img class="youtube_img social_media_icon" src="assets/social_icons/youtube_icon.png" alt="Youtube Icon">
         </div>
-        <iframe class="footer_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853438026!2d-111.91534443111685!3d42.09974162639047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1638410195439!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="footer_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11852.958830505177!2d-111.40486806217935!3d42.03803991735526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875415e9bdab006f%3A0xc1864ed86dd2b0e4!2sFish%20Haven%2C%20ID%2083287!5e0!3m2!1sen!2sus!4v1639034395941!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <span id="current_date"></span>
     </div>
     <div class="footer_bar">

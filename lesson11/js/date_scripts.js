@@ -49,6 +49,8 @@ function banner_display() {
 }
 
 current_date();
+if (document.querySelector(".page_title").textContent == "Preston") {
 banner_display();
+}
 copyrightDate();
 // lastUpdatedDate();

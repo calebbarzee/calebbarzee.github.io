@@ -91,7 +91,7 @@
     }
     .hero_img {
         grid-column: 2/9;
-        grid-row: 3/18;
+        grid-row: 3/17;
         width: 100%;
     }
     .weather_summary {
@@ -101,9 +101,16 @@
         width: fit-content;
         height: fit-content;
     }
-    .forecast_heading {
+    .upcoming_events {
         grid-column: 2/9;
         grid-row: 18/20;
+        background-color: #fca311;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .forecast_heading {
+        grid-column: 2/9;
+        grid-row: 20/21;
         font-size: 1.5rem;
         background-color: #e5e5e5;
         text-align: center;
@@ -111,7 +118,7 @@
     }
     .five_day_forecast {
         grid-column: 2/9;
-        grid-row: 20/30;
+        grid-row: 21/30;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         padding: 2rem 0;
