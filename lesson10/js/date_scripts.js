@@ -20,16 +20,16 @@ function copyrightDate() {
   document.getElementById("copyrightYear").textContent = copyrightYear;
 }
 
-function lastUpdatedDate() {
-  let options2 = {
-    month: "short",
-    day: "numeric",
-    year: "numeric",
-  };
-  let lastUpdated = new Date(document.lastModified);
-  lastUpdated = lastUpdated.toLocaleDateString(undefined, options2);
-  document.getElementById("updateDate").textContent = lastUpdated;
-}
+// function lastUpdatedDate() {
+//   let options2 = {
+//     month: "short",
+//     day: "numeric",
+//     year: "numeric",
+//   };
+//   let lastUpdated = new Date(document.lastModified);
+//   lastUpdated = lastUpdated.toLocaleDateString(undefined, options2);
+//   document.getElementById("updateDate").textContent = lastUpdated;
+// }
 
 
 function banner_display() {
@@ -51,4 +51,4 @@ function banner_display() {
 current_date();
 banner_display();
 copyrightDate();
-lastUpdatedDate();
+// lastUpdatedDate();
