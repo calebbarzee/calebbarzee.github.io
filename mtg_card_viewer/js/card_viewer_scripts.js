@@ -1,47 +1,41 @@
 //initialize the lists
 let artist_list = []
 artist_list = generate_artist_list();
-let card_list = []
 
-// console.log(card_list);
+// console.log(card);
 
 function generate_new_card() {
     //gets the next card in the list and displays it
-    const card_title = document.querySelector(".card_title")
-    const card_img = document.querySelector(".card_img")
-    const artist_link = document.querySelector(".artist_link")
-    const card_set = document.querySelector(".card_set")
-    const card_rarity = document.querySelector(".card_rarity")
-    const card_types = document.querySelector(".card_types")
-    const card_subtypes = document.querySelector(".card_subtypes")
-    get_card_data();
-    
-    // console.log(card_list);
-    card_title.innerHTML = card_list[0].name;
-    card_img.setAttribute("src", card_list[0].imageUrl);
-    artist_link.innerHTML = card_list[0].artist;
-    let link_url = get_artist_link(card_list[0].artist);
+
+    get_card_data().then(display_card);
+    }
+function display_card(card) {
+    const card_title = document.querySelector(".card_title");
+    const card_img = document.querySelector(".card_img");
+    const artist_link = document.querySelector(".artist_link");
+    const card_set = document.querySelector(".card_set");
+    const card_rarity = document.querySelector(".card_rarity");
+    const card_types = document.querySelector(".card_types");
+    const card_flavor_text = document.querySelector(".flavor_text");
+    console.log(card);
+    card_title.innerHTML = card.name;
+    card_img.setAttribute("src", card.image_uris.png);
+    artist_link.innerHTML = card.artist;
+    let link_url = get_artist_link(card.artist);
     artist_link.setAttribute("href", link_url);
-    card_set.innerHTML = card_list[0].setName;
-    card_rarity.innerHTML = card_list[0].rarity;
-    if (card_list[0].types != null) {
-        for (i=0; i<card_list[0].types.length; i++) {
-            card_types.innerHTML = card_list[0].types[i];
-        }
-    }
-    if (card_list[0].subtypes != null) {
-        for (i=0; i<card_list[0].subtypes.length; i++) {
-            card_subtypes.innerHTML = card_list[0].subtypes[i];
-        }
-    }
+    card_set.innerHTML = card.set_name;
+    card_rarity.innerHTML = card.rarity;
+    card_types.innerHTML = card.type_line;
+    let flavor = card.hasOwnProperty("flavor_text") ? card.flavor_text : "";
+    card_flavor_text.innerHTML = flavor;
 }
 
 async function get_card_data() {
-    let response = await fetch("https://api.magicthegathering.io/v1/cards?random=true&pageSize=1");
+    let response = await fetch("https://api.scryfall.com/cards/random");
     let data = await response.json();
-    // console.log(data.cards);
-    card_list = data.cards;
-    // console.log(card_list);
+    card = data;
+    // console.log(card);
+    return card
 }
 
 function get_artist_link(artist_name) {
