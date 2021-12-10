@@ -1,0 +1,39 @@
+body {
+    background-color: #212121;
+    color: #e6e3d8;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+.button {
+    height: 3em;
+    grid-column: 4/8;
+    font-size: 2rem;
+    border: none;
+    color: #e6e3d8;
+    background-color: #212121;
+}
+.button:hover {
+    color: #e3dbc5;
+}
+.card_viewer {
+    grid-column: 3/9;
+}
+.card_title {
+    grid-column: 3/9;
+    font-size: 2rem;
+}
+.card_img {
+    grid-column: 3/9;
+    max-width: 100%;
+    border-radius: 0.65em;
+}
+.card_info {
+    grid-column: 3/9;
+    font-size: 1.5rem;
+}
+a {
+    color: #e6e3d8;
+}
+a:hover {
+    color: #e3dbc5;
+}

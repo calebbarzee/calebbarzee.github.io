@@ -1,14 +1,12 @@
-//initialize the lists and count
+//initialize the lists
 let artist_list = []
 artist_list = generate_artist_list();
 let card_list = []
-get_card_data();
+
 // console.log(card_list);
-let count = 0;
 
 function generate_new_card() {
     //gets the next card in the list and displays it
-    //if the count is >= 100 then a new list of card_list is requested from API and count = 0
     const card_title = document.querySelector(".card_title")
     const card_img = document.querySelector(".card_img")
     const artist_link = document.querySelector(".artist_link")
@@ -16,36 +14,30 @@ function generate_new_card() {
     const card_rarity = document.querySelector(".card_rarity")
     const card_types = document.querySelector(".card_types")
     const card_subtypes = document.querySelector(".card_subtypes")
+    get_card_data();
     
-    if (count >= 100) {
-        card_list = get_card_data();
-        count = 0;
+    // console.log(card_list);
+    card_title.innerHTML = card_list[0].name;
+    card_img.setAttribute("src", card_list[0].imageUrl);
+    artist_link.innerHTML = card_list[0].artist;
+    let link_url = get_artist_link(card_list[0].artist);
+    artist_link.setAttribute("href", link_url);
+    card_set.innerHTML = card_list[0].setName;
+    card_rarity.innerHTML = card_list[0].rarity;
+    if (card_list[0].types != null) {
+        for (i=0; i<card_list[0].types.length; i++) {
+            card_types.innerHTML = card_list[0].types[i];
+        }
     }
-    if (count < 100) {
-        // console.log(card_list);
-        card_title.innerHTML = card_list[count].name;
-        card_img.setAttribute("src", card_list[count].imageUrl);
-        artist_link.innerHTML = card_list[count].artist;
-        let link_url = get_artist_link(card_list[count].artist);
-        artist_link.setAttribute("href", link_url);
-        card_set.innerHTML = card_list[count].setName;
-        card_rarity.innerHTML = card_list[count].rarity;
-        if (card_list[count].types != null) {
-            for (i=0; i<card_list[count].types.length; i++) {
-                card_types.innerHTML = card_list[count].types[i];
-            }
+    if (card_list[0].subtypes != null) {
+        for (i=0; i<card_list[0].subtypes.length; i++) {
+            card_subtypes.innerHTML = card_list[0].subtypes[i];
         }
-        if (card_list[count].subtypes != null) {
-            for (i=0; i<card_list[count].subtypes.length; i++) {
-                card_subtypes.innerHTML = card_list[count].subtypes[i];
-            }
-        }
-        count++;
     }
 }
 
 async function get_card_data() {
-    let response = await fetch("https://api.magicthegathering.io/v1/cards");
+    let response = await fetch("https://api.magicthegathering.io/v1/cards?random=true&pageSize=1");
     let data = await response.json();
     // console.log(data.cards);
     card_list = data.cards;
