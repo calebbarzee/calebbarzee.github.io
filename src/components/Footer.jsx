@@ -1,4 +1,6 @@
+import Contact from "./Contact";
+
 export default function Footer() {
-   //component logic goes here
-   //return html to be rendered
+   <Contact />
+   //footer to be included on each page, contains socials and copyright
 }
