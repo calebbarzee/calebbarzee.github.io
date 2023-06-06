@@ -1,79 +1,34 @@
-# Caleb Barzee's Personal Portfolio
+# Portfolio Starter Kit
 
-This repository contains the source code for Caleb Barzee's personal portfolio, showcasing design and development work.
+This portfolio is built with **Next.js** and a library called [Nextra](https://nextra.vercel.app/). It allows you to write Markdown and focus on the _content_ of your portfolio. This starter includes:
 
-This project is built using [React.js](https://reactjs.org/), and leverages several other technologies including [styled-components](https://styled-components.com/) for CSS in JS, [Font Awesome](https://fontawesome.com/) for icons, [React Helmet](https://github.com/nfl/react-helmet) for dynamic head tags, and [React Router DOM](https://reactrouter.com/web/guides/quick-start) for routing.
+- Automatically configured to handle Markdown/MDX
+- Generates an RSS feed based on your posts
+- A beautiful theme included out of the box
+- Easily categorize posts with tags
+- Fast, optimized web font loading
 
-## Version
+## Configuration
 
-The current version of this project is 1.0.0.
+1. Update your name in `theme.config.js` or change the footer.
+1. Update your name and site URL for the RSS feed in `scripts/gen-rss.js`.
+1. Update the meta tags in `pages/_document.js`.
+1. Update the posts inside `pages/posts/*.md` with your own content.
 
-## Getting Started
+## Deploy your own
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
 
-### Prerequisites
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/nextjs-portfolio-starter&project-name=portfolio&repository-name=portfolio)
 
-- Node.js and npm (You can download them from [here](https://nodejs.org/en/))
+## How to use
 
-### Installing
-
-Follow these steps to run this project in your local environment:
-
-1. Clone the repository:
-
-```bash
-git clone https://github.com/CalebBarzee/portfolio.git
-```
-
-2. Go into the repository:
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
 ```bash
-cd portfolio
+npx create-next-app --example blog my-blog
+# or
+yarn create next-app --example blog my-blog
 ```
 
-3. Install all dependencies using npm:
-
-```bash
-npm install
-```
-
-4. To run the project:
-
-```bash
-npm start
-```
-
-Now, open your preferred browser and visit `http://localhost:3000`.
-
-## Available Scripts
-
-In the project directory, you can run:
-
-- `npm start` : Runs the app in the development mode.
-- `npm test` : Launches the test runner in the interactive watch mode.
-- `npm run build` : Builds the app for production to the `build` folder.
-- `npm run eject` : **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-## Deployment
-
-You can create a production build of this app by running `npm run build`.
-
-## Author
-
-- **Caleb Barzee** - [Github](https://calebbarzee.github.io/), [Email](mailto:barzeec@gmail.com)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-- Icons used from [Font Awesome](https://fontawesome.com/)
-- Routing handled by [React Router DOM](https://reactrouter.com/web/guides/quick-start)
-- CSS in JS done using [styled-components](https://styled-components.com/)
-- Dynamic head tags with [React Helmet](https://github.com/nfl/react-helmet)
-- Google Analytics with [react-ga4](https://www.npmjs.com/package/react-ga4)
-- Testing done with [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro)
-
-Please feel free to submit issues and pull requests.
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).

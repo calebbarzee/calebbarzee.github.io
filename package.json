@@ -1,46 +1,25 @@
 {
-	"name": "portfolio",
-	"version": "1.0.0",
-	"description": "Personal design and development portfolio, built using Reactjs",
-	"author": {
-		"name": "Caleb Barzee",
-		"email": "barzeec@gmail.com",
-		"url": "https://calebbarzee.github.io/"
-	},
-	"license": "MIT",
-	"private": true,
-	"dependencies": {
-		"@fortawesome/free-brands-svg-icons": "^6.4.0",
-		"@fortawesome/free-regular-svg-icons": "^6.4.0",
-		"@fortawesome/free-solid-svg-icons": "^6.4.0",
-		"@fortawesome/react-fontawesome": "^0.2.0",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-router-dom": "^6.11.2",
-		"styled-components": "^5.3.11"
-	},
-	"scripts": {
-		"start": "webpack-dev-server --mode development",
-		"build": "webpack --mode production"
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app"
-		]
-	},
-	"prettier": {
-		"useTabs": true,
-		"tabWidth": 4
-	},
-	"devDependencies": {
-		"@babel/core": "^7.22.1",
-		"@babel/preset-env": "^7.22.4",
-		"@babel/preset-react": "^7.22.3",
-		"babel-loader": "^9.1.2",
-		"css-loader": "^6.8.1",
-		"style-loader": "^3.3.3",
-		"webpack": "^5.85.0",
-		"webpack-cli": "^5.1.1",
-		"webpack-dev-server": "^4.15.0"
-	}
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "node ./scripts/gen-rss.js && next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "next": "13.4.4",
+    "nextra": "^2.7.0",
+    "nextra-theme-blog": "^2.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rss": "^1.2.2"
+  },
+  "prettier": {
+    "arrowParens": "always",
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "none",
+    "semi": false
+  }
 }
