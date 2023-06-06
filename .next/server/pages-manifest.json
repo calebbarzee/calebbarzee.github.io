@@ -2,6 +2,11 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/photos": "pages/photos.js"
+  "/": "pages/index.html",
+  "/photos": "pages/photos.html",
+  "/posts": "pages/posts.html",
+  "/posts/markdown": "pages/posts/markdown.html",
+  "/tags/[tag]": "pages/tags/[tag].html",
+  "/posts/pages": "pages/posts/pages.html",
+  "/404": "pages/404.html"
 }
