@@ -11,7 +11,8 @@ export default function About() {
           </h1>
           <img src={memoji2} alt="Caleb Profile Memoji Image" className="w-40 h-40 rounded-full"></img>
           <h2 className="mb-8 leading-relaxed">
-            A collaborative and innovative professional, with a focus on human-centric design.You can catch my everyday creating or cyclying, biking boosts my bytes!
+            A collaborative and innovative professional, with a focus on human-centric design.You can catch my everyday creating or cyclying.
+            Biking boosts my bytes!
           </h2>
         </div>
       </div>
