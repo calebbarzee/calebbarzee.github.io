@@ -46,6 +46,9 @@ jobs:
         with:
           # Upload dist repository
           path: './dist'
+          enable_redirects: true
+          redirects: |
+            /index.html 200 /home
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
