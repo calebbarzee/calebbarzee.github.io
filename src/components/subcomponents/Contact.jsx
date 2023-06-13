@@ -4,5 +4,5 @@ export default function Contact() {
       <div>
          Linkedin <a href="https://www.linkedin.com/in/calebbarzee/">calebbarzee</a>
       </div>
-   )
+   );
 }

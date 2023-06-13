@@ -1,18 +1,18 @@
-import About from "../components/About";
-import ProjectCard from "../components/ProjectCard";
-import Education from "../components/Education";
-import Skills from "../components/Skills";
-import Work from "../components/Work";
+import About from '../components/About';
+// import ProjectCard from '../components/subcomponents/ProjectCard';
+// import Education from '../components/Education';
+// import Skills from '../components/Skills';
+// import Work from '../components/Work';
 
 export default function Home() {
    return (
    <div className="homepage">
       <About />
       {/* js here to render out three project card templates */}
-      <ProjectCard />
+      {/* <ProjectCard />
       <Education />
       <Skills />
-      <Work />
+      <Work /> */}
    </div>
-   )
+   );
 }
