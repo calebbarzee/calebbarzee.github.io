@@ -6,7 +6,7 @@ import About from '../components/About';
 
 export default function Home() {
    return (
-   <div className="homepage">
+   <div className="flex justify-center">
       <About />
       {/* js here to render out three project card templates */}
       {/* <ProjectCard />
