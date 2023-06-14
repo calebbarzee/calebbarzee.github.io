@@ -5,11 +5,10 @@ import Home from './pages/Home';
 // import Development from './pages/Development';
 // import Resume from './pages/Resume';
 import NoPage from './pages/NoPage';
-import './App.css';
 
 export default function App() {
   return (
-    <main>
+    <main className="max-w-1280 mx-auto p-8 text-center">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="home" element={<Home />} />
