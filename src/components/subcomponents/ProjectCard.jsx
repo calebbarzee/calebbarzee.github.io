@@ -1,12 +1,25 @@
-export default function ProjectCard() {
+import PropTypes from 'prop-types';
+
+export default function ProjectCard(props) {
    //template for project card that links to page about project
+
+   ProjectCard.propTypes = {
+      title: PropTypes.string.isRequired,
+      industry: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      link: PropTypes.string.isRequired,
+      image: PropTypes.any.isRequired,
+      // image is the filename of the image and must be located in assets/projectImages
+   };
+   //props contains title, industry, description, image, link
    return (
-      <div className="bg-white font-semibold text-center rounded-3xl border shadow-lg p-10 max-w-xs">
-         <img className="mb-3 w-32 h-32 rounded-full shadow-lg mx-auto" src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="product designer"></img>
-         <h1 className="text-lg text-gray-700"> 8-bit-gallery </h1>
-         <h3 className="text-sm text-gray-400 "> <b>Industry:</b> Education </h3>
-         <p className="text-xs text-gray-400 mt-4"> Immerse yourself in a unique art history journey through this pixelated-react web app, where famous paintings are transformed into interactive 8-bit masterpieces, allowing you to both educate yourself and challenge your knowledge of renowned artworks. </p>
-         <button className="bg-blue-500 px-8 py-2 mt-8 rounded-3xl text-gray-100 font-semibold uppercase tracking-wide">LEARN MORE</button>
+      <a href={props.link}>
+      <div className="p-4 bg-white shadow-md rounded-lg text-left max-w-2xl self-center">
+         <img className="mb-3 rounded-md shadow-lg mx-auto" src={props.image} alt="Project Image"></img>
+         <h1 className="text-lg font-semibold text-gray-700"> {props.title} </h1>
+         <h3 className="text-sm text-gray-400 "> <b>Industry:</b> {props.industry} </h3>
+         <p className="text-xs mt-4"> {props.description} </p>
       </div>
+      </a>
    );
 }
