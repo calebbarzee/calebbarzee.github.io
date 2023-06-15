@@ -11,7 +11,7 @@ export default function App() {
     <main className="max-w-1280 mx-auto p-8 text-center">
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path="home" element={<Home />} />
+          <Route path="" element={<Home />} />
           {/* <Route path="design" element={<Design />} />
           <Route path="development" element={<Development />} />
           <Route path="resume" element={<Resume />} /> */}
