@@ -34,17 +34,18 @@ export default function Home() {
 
       <div className="row-start-6 col-start-4 col-end-5 border-t border-blue-gray-50 py-1"></div>
 
+      <h3 className="text-xl font-bold row-start-6 col-start-2 col-end-6 text-left mt-4">Projects: </h3>
       <img src={memoji1} alt="Caleb smiling memoji" className="w-44 h-auto mt-8 row-start-7 col-start-2"/>
       <div className="col-start-3 col-end-7">
-      <ProjectCard 
-      title="8-bit-gallery"
-      industry="Education"
-      description="Immerse yourself in a unique art history journey through this pixelated-react web app, where famous paintings are transformed into interactive 8-bit masterpieces, allowing you to both educate yourself and challenge your knowledge of renowned artworks."
-      image={project1}
-      link="https://github.com/calebbarzee/8-bit-gallery"
-      />
+         <ProjectCard 
+         title="8-bit-gallery"
+         industry="Education"
+         description="Immerse yourself in a unique art history journey through this pixelated-react web app, where famous paintings are transformed into interactive 8-bit masterpieces, allowing you to both educate yourself and challenge your knowledge of renowned artworks."
+         image={project1}
+         link="https://github.com/calebbarzee/8-bit-gallery"
+         />
       </div>
-      <img src={memoji2} alt="Caleb lightbulb idea memoji" className="w-44 h-auto mt-8 col-start-6"/>
+      {/* <img src={memoji2} alt="Caleb lightbulb idea memoji" className="w-44 h-auto mt-8 col-start-6"/> */}
       {/* <div>
       <ProjectCard />
       </div>
@@ -52,9 +53,9 @@ export default function Home() {
       <div>
       <ProjectCard />
       </div> */}
-      {/* <div>
+      <div className="col-start-2 col-end-6 mb-8">
       <Work />
-      </div> */}
+      </div>
    </div>
    );
 }
