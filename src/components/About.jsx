@@ -6,7 +6,7 @@ export default function About() {
           Hi, I&apos;m Caleb.
         </h1>
         <h2 className="leading-relaxed">
-          A collaborative and innovative professional, with a focus on human-centric design. You can catch my everyday creating or cyclying.
+          A collaborative and innovative professional, with a focus on human-centric design. You can catch me everyday creating or cyclying.
           <br></br><b className="text-lg">Biking boosts my bytes!</b>
         </h2>
       </div>
