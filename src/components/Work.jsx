@@ -48,5 +48,5 @@ export default function Work() {
   </li>
 </ul>
 </div>
-   )
+   );
 }

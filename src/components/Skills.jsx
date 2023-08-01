@@ -13,5 +13,5 @@ export default function Skills() {
          <li>Distinctly empathetic and creative, enabling coworkers and finding unique opportunities to add value</li>
       </ul>
       </div>
-   )
+   );
 }

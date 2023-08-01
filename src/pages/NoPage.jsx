@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 export default function NoPage() {
    const goBack = () => {window.history.back();};
    return (
