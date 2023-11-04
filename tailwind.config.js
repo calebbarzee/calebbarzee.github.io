@@ -4,49 +4,35 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: 'class',
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {
-        primary: {"50":"#eff6ff","100":"#dbeafe","200":"#bfdbfe","300":"#93c5fd","400":"#60a5fa","500":"#3b82f6","600":"#2563eb","700":"#1d4ed8","800":"#1e40af","900":"#1e3a8a"}
-      }
+        'primary': '#eae0d5', // Light Background
+        'secondary': '#e4e6eb', // Light Shade
+        'tertiary': '#ced4da', // Light Accent
+        'quaternary': '#adb5bd', // Light Border
+        'text-primary': '#212529', // Light Text
+        'text-secondary': '#495057', // Light Subtext
+        
+        'dark-primary': '#302f3a', // Dark Background
+        'dark-secondary': '#343a40', // Dark Shade
+        'dark-tertiary': '#495057', // Dark Accent
+        'dark-quaternary': '#6c757d', // Dark Border
+        'dark-text-primary': '#f8f9fa', // Dark Text
+        'dark-text-secondary': '#e9ecef', // Dark Subtext
+
+        'interactive': '#9aa5b1', // Accent Hover
+        'interactive-active': '#6c757d', // Accent Active
+      },
+      fontFamily: {
+        sans: ['Avenir', 'Helvetica', 'Arial', 'sans-serif'],
+      },
+      boxShadow: {
+        'custom-light': '0 2px 4px 0 rgba(0, 0, 0, 0.1)',
+        'custom-dark': '0 2px 4px 0 rgba(0, 0, 0, 0.9)',
+      },
     },
-    fontFamily: {
-      'body': [
-    'Inter', 
-    'ui-sans-serif', 
-    'system-ui', 
-    '-apple-system', 
-    'system-ui', 
-    'Segoe UI', 
-    'Roboto', 
-    'Helvetica Neue', 
-    'Arial', 
-    'Noto Sans', 
-    'sans-serif', 
-    'Apple Color Emoji', 
-    'Segoe UI Emoji', 
-    'Segoe UI Symbol', 
-    'Noto Color Emoji'
-  ],
-      'sans': [
-    'Inter', 
-    'ui-sans-serif', 
-    'system-ui', 
-    '-apple-system', 
-    'system-ui', 
-    'Segoe UI', 
-    'Roboto', 
-    'Helvetica Neue', 
-    'Arial', 
-    'Noto Sans', 
-    'sans-serif', 
-    'Apple Color Emoji', 
-    'Segoe UI Emoji', 
-    'Segoe UI Symbol', 
-    'Noto Color Emoji'
-  ]
-    }
   },
   plugins: [],
-}
+};

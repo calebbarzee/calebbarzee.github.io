@@ -8,7 +8,7 @@ import NoPage from './pages/NoPage';
 
 export default function App() {
   return (
-    <main className="max-w-1280 mx-auto p-8 text-center">
+    <main className="max-w-1280 mx-auto p-8 text-center bg-primary dark:bg-dark-primary text-text-primary dark:text-dark-text-primary">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="" element={<Home />} />

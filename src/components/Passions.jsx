@@ -3,14 +3,7 @@ export default function Passions() {
    return (
       <div className="text-left self-center">
       <h3 className="text-xl font-bold">Areas of Affection:</h3>
-      <ul>
-         <li>Design</li>
-         <li>Ceramics</li>
-         <li>Cycling</li>
-         <li>Baking</li>
-         <li>Soccer</li>
-         <li>Family</li>
-      </ul>
+      <p>Design | Ceramics | Cycling | Baking | Soccer | Family</p>
       </div>
    );
 }
