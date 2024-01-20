@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import About from '../components/About';
-import ProjectCard from '../components/subcomponents/ProjectCard';
-import Education from '../components/Education';
-import Skills from '../components/Skills';
-import Work from '../components/Work';
+import About from '../components/About.jsx';
+import ProjectCard from '../components/subcomponents/ProjectCard.jsx';
+import Education from '../components/Education.jsx';
+import Skills from '../components/Skills.jsx';
+import Work from '../components/Work.jsx';
 
 import Passions from '../components/Passions.jsx';
 import memoji0 from '../assets/memoji/waving.png';
