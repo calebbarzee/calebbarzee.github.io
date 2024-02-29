@@ -4,7 +4,7 @@ export default function notFound() {
 		<div classname="font-monospace">
 			<h1 className="text-lg">404 - Page Not Found</h1>
 			<p>Sorry, the page you are looking for does not exist.</p>
-			<a href="/">Go back home -&gt;</a>
+			<a href="/">Return home -&gt;</a>
 		</div>
 	</main>
   )
