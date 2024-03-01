@@ -9,9 +9,26 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const header = (
+    <header>
+    </header>
+  );
+
+  const footer = (
+    <footer>
+    </footer>
+  );
+
   return (
     <html lang="en">
-      <body className={fira.className}>{children}</body>
+      <head />
+      <body className={fira.className}>
+        <div className="mx-auto  max-w-6xl px-6">
+          {header}
+          {children}
+          {footer}
+        </div>
+      </body>
     </html>
   );
 }

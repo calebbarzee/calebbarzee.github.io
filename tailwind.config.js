@@ -35,7 +35,7 @@ module.exports = {
       },
       fontSize: {
         // Refining font sizes for better control in ASCII art
-        xs: '0.75', // Adjusted for better visibility
+        xs: '0.75rem', // Adjusted for better visibility
         sm: '0.875rem',
         base: '1rem',
         lg: '1.125rem',
