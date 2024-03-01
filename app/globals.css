@@ -27,6 +27,28 @@ body {
     rgb(var(--background-start-rgb));
   }
 
+@layer base {
+  p {
+    @apply text-base leading-6 mb-6;
+  }
+
+  h1 {
+    @apply text-3xl leading-snug mt-4 mb-4;
+  }
+
+  h2 {
+    @apply text-2xl leading-relaxed mt-4 mb-4;
+  }
+
+  h3 {
+    @apply text-xl leading-relaxed mt-4 mb-4;
+  }
+
+  h6 {
+    @apply text-sm leading-tight -mt-4 mb-6;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

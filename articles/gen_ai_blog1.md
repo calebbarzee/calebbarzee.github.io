@@ -19,8 +19,7 @@ Generative ai = generative artificial intelligence. This name is both informing 
 The capabilities of these models to mimic human behavior in predicting output will most likely dramatically effect everyday life. I’ve already increased the speed and accuracy of many common tasks with generative ai. It’s likely that these models will only continue to get better, so it’s wise to adopt early and become familiar with tooling that may become ubiquitous.
 
 ## The good
-
-Optimal use cases and things the technology is particularly good at
+###### Optimal use cases and things the technology is particularly good at
 
 - common knowledge fact reference
     - I’ve replaced almost all web search engine requests for encyclopedia like information with chatGPT due to it’s NLP response alleviating cognitive load.
@@ -34,8 +33,7 @@ Optimal use cases and things the technology is particularly good at
     - I will not be reading all classic literary works in my lifetime. I simply do not have the time or desire to. However, I could train an ai model on this incredible set of texts and then query it for information. I love using ai models to learn something new from resources I might have never encountered.
 
 ## The bad
-
-Non-optimal use cases of generative ai
+###### Non-optimal use cases of generative ai
 
 - new context interpretation without retraining
     - I challenge you to try and teach an english LLM to reliably respell the english language based on phonetic rules. I don’t think it’s possible without a complete retraining of the model. This new context will not be included in the models processing of information. Remember this is just a statistical structure modeling behavior, not a thinking machine.
@@ -45,8 +43,7 @@ Non-optimal use cases of generative ai
     - With a generative ai model there isn’t native support for multi-step logic problems. This means that cause and effect predictions can be quite poor. It’s best to reason through this vertical slice yourself. Those individuals like myself that write code for a living, would benefit from knowing that generative ai will not write a good or even functional code base for you. This is increasingly true with each layer of complexity involved.
 
 ## The ugly
-
-The worst and regressive things that are happening due to generative ai
+###### The worst and regressive things that are happening due to generative ai
 
 - outsourcing of all frontal lobe functions
     - We will still need educators, writers, engineers, doctors, etc. Ai does not and will not replace human thought. If you are a student, and I hope everyone considers themselves one, do not expect to learn without effort.
@@ -90,9 +87,10 @@ Hallucinations are more rare, and we can make them almost non-existent through m
 ## Conclusion: the key is interactivity
 
 You may have already come to the same conclusion. Regardless, my case for interactivity being the core feature of utilizing ai is as follows:
-computer computes, not think →
 
-ai model computes, not think →
+computer computes, not thinks →
+
+ai model computes, not thinks →
 
 human thinks →
 
@@ -106,4 +104,9 @@ ai models + humans = efficient thinking with computation.
 
 As ai tooling continues to develop I hope we see diverse and more specialized tools developed. Much like how photography showed us what painting is and isn’t, ai will help us discover what it means to be human.
 
-**post script rant:** Verbose writing, while increasingly easier to generate with ai, will continue to be useless.
+---
+
+
+**post script rant:** 
+
+Verbose writing, while increasingly easier to generate with ai, will continue to be useless.
