@@ -56,7 +56,7 @@ export default function PiTrain({ PI }) {
           Starting with the first decimal place, type the digits of π as they
           appear below:
         </p>
-        <textarea
+        <input
           className={`${isStarted ? "border-2 focus:border-green-700" : ""}${isCorrect ? "" : "border-2 focus:border-red-700"} rounded-md border-2 border-slate-300 p-2 bg-transparent focus:ring-0 focus:outline-none`}
           ref={inputRef}
           aria-label="text-box"
