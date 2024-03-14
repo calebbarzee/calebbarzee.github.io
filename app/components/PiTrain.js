@@ -56,17 +56,18 @@ export default function PiTrain({ PI }) {
           Starting with the first decimal place, type the digits of π as they
           appear below:
         </p>
-        <div
-          className={`typing-area${isStarted ? "border-2 border-green-700" : ""}${isCorrect ? "" : "border-2 border-red-700"} rounded-md border-2 border-slate-300 p-2`}
+        <textarea
+          className={`${isStarted ? "border-2 focus:border-green-700" : ""}${isCorrect ? "" : "border-2 focus:border-red-700"} rounded-md border-2 border-slate-300 p-2 bg-transparent focus:ring-0 focus:outline-none`}
           ref={inputRef}
           aria-label="text-box"
           onKeyDown={handleInput}
           tabIndex={0}
           role="textbox"
-        >
-          <span className="cursor" />
-          <span className="remaining-text">{PI.slice(index, index + 30)}</span>
-        </div>
+          rows={1}
+          cols={30}
+          value={PI.slice(index, index + 30)}
+          readOnly
+        />
       </div>
       <div className="mt-4 grid grid-cols-5">
         <button
