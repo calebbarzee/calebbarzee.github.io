@@ -9,6 +9,7 @@ export default function Homepage() {
 		<main className="flex min-h-screen flex-col items-center">
 		<h3 className="text-3xl font-bold">Happy Pi Day!</h3>
 		<Link href="/blog/pi_calc_blog1"><h6 className="hover:underline">Calculating the digits of π -&gt;</h6></Link>
+		<Link href="https://en.wikipedia.org/wiki/Approximations_of_π#"><h6 className="hover:underline">Approximations of π (Wiki) -&gt;</h6></Link>
 		<AnimatePi PI={PI} />
     </main>
   );

@@ -8,7 +8,7 @@ export default function AnimatePi({PI}) {
 
 	useEffect(() => {
 		let interval;
-		if (isRunning && numOfDigits > displayedDigits.length - 1) {
+		if (isRunning && numOfDigits > displayedDigits.length - 2) {
 		  interval = setInterval(() => {
 			setDisplayedDigits((prevDigits) => {
 			  if (prevDigits.length - 2 < PI.length && prevDigits.length - 2 < numOfDigits) {
