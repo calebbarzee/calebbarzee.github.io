@@ -37,6 +37,7 @@ export default function PiTrain({ PI }) {
   const handleStart = () => {
     setIsStarted(true);
     inputRef.current.focus();
+    // inputRef.dispatchEvent(new Event('touchstart'));
   };
 
   return (
@@ -56,16 +57,18 @@ export default function PiTrain({ PI }) {
           Starting with the first decimal place, type the digits of π as they
           appear below:
         </p>
-        <input
-          className={`${isStarted ? "border-2 focus:border-green-700" : ""}${isCorrect ? "" : "border-2 focus:border-red-700"} rounded-md border-2 border-slate-300 p-2 bg-transparent focus:ring-0 focus:outline-none`}
+        <textarea
+          className={`${isStarted ? "border-2 focus:border-green-700" : ""}${isCorrect ? "" : "border-2 focus:border-red-700"} rounded-md border-2 border-slate-300 bg-transparent p-2 focus:outline-none focus:ring-0`}
           ref={inputRef}
           aria-label="text-box"
+          // onFocus={}
           onKeyDown={handleInput}
+          onInput={handleInput}
           tabIndex={0}
           role="textbox"
           rows={1}
           cols={30}
-          value={PI.slice(index, index + 30)}
+          placeholder={PI.slice(index, index + 20)}
           readOnly
         />
       </div>
