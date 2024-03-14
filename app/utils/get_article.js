@@ -15,7 +15,7 @@ const get_metadata = () => {
       subtitle: matterResult.data.subtitle,
       date_written: matterResult.data.date_written,
       slug: fileName.replace(".md", ""),
-    }
+    };
     // console.log(metadata);
     return metadata;
   });
@@ -31,4 +31,4 @@ const get_content = (slug) => {
   return matterResult;
 };
 
-export {get_metadata, get_content};
+export { get_metadata, get_content };

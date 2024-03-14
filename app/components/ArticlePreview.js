@@ -2,8 +2,7 @@ import Link from "next/link";
 
 const ArticlePreview = (props) => {
   return (
-    <div
-      className="border-2 border-slate-300 p-4 rounded-md shadow-sm">
+    <div className="rounded-md border-2 border-slate-300 p-4 shadow-sm">
       <p className="text-xs">{props.date_written}</p>
 
       <Link href={`/blog/${props.slug}`}>

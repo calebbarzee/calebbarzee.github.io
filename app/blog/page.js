@@ -1,4 +1,4 @@
-import {get_metadata} from "../utils/get_article";
+import { get_metadata } from "../utils/get_article";
 import ArticlePreview from "../components/ArticlePreview";
 
 const HomePage = () => {
@@ -7,9 +7,7 @@ const HomePage = () => {
     <ArticlePreview key={article.slug} {...article} />
   ));
 
-  return (
-    <div className="my-4 mx-auto max-w-3xl">{ArticlePreviews}</div>
-  );
+  return <div className="mx-auto my-4 max-w-3xl">{ArticlePreviews}</div>;
 };
 
 export default HomePage;

@@ -20,32 +20,32 @@ body {
   font-family: "Fira Code", "Roboto Mono", "monospace";
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-    to bottom,
-    transparent,
-    rgb(var(--background-end-rgb))
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-  }
+}
 
 @layer base {
   p {
-    @apply text-base leading-6 mb-6;
+    @apply mb-6 text-base leading-6;
   }
 
   h1 {
-    @apply text-3xl leading-snug mt-4 mb-4;
+    @apply mb-4 mt-4 text-3xl leading-snug;
   }
 
   h2 {
-    @apply text-2xl leading-relaxed mt-4 mb-4;
+    @apply mb-4 mt-4 text-2xl leading-relaxed;
   }
 
   h3 {
-    @apply text-xl leading-relaxed mt-4 mb-4;
+    @apply mb-4 mt-4 text-xl leading-relaxed;
   }
 
   h6 {
-    @apply text-sm leading-tight -mt-4 mb-6;
+    @apply -mt-4 mb-6 text-sm leading-tight;
   }
 }
 

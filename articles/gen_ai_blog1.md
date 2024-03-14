@@ -3,6 +3,7 @@ title: "Generative AI: the good, the bad, and the ugly"
 subtitle: "Opinions after 1 year of using generative AI."
 date_written: "2023-10-23"
 ---
+
 <!-- Metadata for title, subtitle, date written, tags -->
 <!-- tags: ["ai","chatGPT","LLM","NLP","Natural Language Processing", "Large Language Models"] -->
 
@@ -19,42 +20,45 @@ Generative ai = generative artificial intelligence. This name is both informing 
 The capabilities of these models to mimic human behavior in predicting output will most likely dramatically effect everyday life. I’ve already increased the speed and accuracy of many common tasks with generative ai. It’s likely that these models will only continue to get better, so it’s wise to adopt early and become familiar with tooling that may become ubiquitous.
 
 ## The good
+
 ###### Optimal use cases and things the technology is particularly good at
 
 - common knowledge fact reference
-    - I’ve replaced almost all web search engine requests for encyclopedia like information with chatGPT due to it’s NLP response alleviating cognitive load.
+  - I’ve replaced almost all web search engine requests for encyclopedia like information with chatGPT due to it’s NLP response alleviating cognitive load.
 - typo detection
-    - Machines are much better at repetitive tasks than humans. I’ve found that generative ai can actually proof read large amounts of text quickly and semi effectively. My preferred process is asking it to point out the mistakes instead of generating the corrected text. I find that maintaining current state and then being able to choose myself which corrections to implement leads to best results and eliminates unwanted changes.
+  - Machines are much better at repetitive tasks than humans. I’ve found that generative ai can actually proof read large amounts of text quickly and semi effectively. My preferred process is asking it to point out the mistakes instead of generating the corrected text. I find that maintaining current state and then being able to choose myself which corrections to implement leads to best results and eliminates unwanted changes.
 - text formatting
-    - Another example of the type of repetitive task that predictive ai models live for.
+  - Another example of the type of repetitive task that predictive ai models live for.
 - iterative ideation
-    - This is like asking a coworker what they think and their input improving your original thought. In essence this is combining your unique ideas with a rich resource of information. See conclusion for additional details.
+  - This is like asking a coworker what they think and their input improving your original thought. In essence this is combining your unique ideas with a rich resource of information. See conclusion for additional details.
 - broad scope information
-    - I will not be reading all classic literary works in my lifetime. I simply do not have the time or desire to. However, I could train an ai model on this incredible set of texts and then query it for information. I love using ai models to learn something new from resources I might have never encountered.
+  - I will not be reading all classic literary works in my lifetime. I simply do not have the time or desire to. However, I could train an ai model on this incredible set of texts and then query it for information. I love using ai models to learn something new from resources I might have never encountered.
 
 ## The bad
+
 ###### Non-optimal use cases of generative ai
 
 - new context interpretation without retraining
-    - I challenge you to try and teach an english LLM to reliably respell the english language based on phonetic rules. I don’t think it’s possible without a complete retraining of the model. This new context will not be included in the models processing of information. Remember this is just a statistical structure modeling behavior, not a thinking machine.
+  - I challenge you to try and teach an english LLM to reliably respell the english language based on phonetic rules. I don’t think it’s possible without a complete retraining of the model. This new context will not be included in the models processing of information. Remember this is just a statistical structure modeling behavior, not a thinking machine.
 - highly opinionated or uncommon reference
-    - If there are multiple differing opinions on a topic, there isn’t a reliable way of determining the best opinion. Usually what happens is the opinion that occurs the most is adopted. Please think for yourself.
+  - If there are multiple differing opinions on a topic, there isn’t a reliable way of determining the best opinion. Usually what happens is the opinion that occurs the most is adopted. Please think for yourself.
 - complex cause and effect mechanics
-    - With a generative ai model there isn’t native support for multi-step logic problems. This means that cause and effect predictions can be quite poor. It’s best to reason through this vertical slice yourself. Those individuals like myself that write code for a living, would benefit from knowing that generative ai will not write a good or even functional code base for you. This is increasingly true with each layer of complexity involved.
+  - With a generative ai model there isn’t native support for multi-step logic problems. This means that cause and effect predictions can be quite poor. It’s best to reason through this vertical slice yourself. Those individuals like myself that write code for a living, would benefit from knowing that generative ai will not write a good or even functional code base for you. This is increasingly true with each layer of complexity involved.
 
 ## The ugly
+
 ###### The worst and regressive things that are happening due to generative ai
 
 - outsourcing of all frontal lobe functions
-    - We will still need educators, writers, engineers, doctors, etc. Ai does not and will not replace human thought. If you are a student, and I hope everyone considers themselves one, do not expect to learn without effort.
+  - We will still need educators, writers, engineers, doctors, etc. Ai does not and will not replace human thought. If you are a student, and I hope everyone considers themselves one, do not expect to learn without effort.
 - repetition of common misconceptions
-    - What if a geocentric model or flat earth theory was widely accepted as fact today and not yet known commonly to be false. Our data sets for training predictive ai models would certainly contain this information. It would then be spewed as fact by all instances of the ai. This example may seem extreme, but whats truly dangerous is that things similar to this are happening now and we may not even know it. If we turn off our brains these untrue assumptions are sure to run rampant.
+  - What if a geocentric model or flat earth theory was widely accepted as fact today and not yet known commonly to be false. Our data sets for training predictive ai models would certainly contain this information. It would then be spewed as fact by all instances of the ai. This example may seem extreme, but whats truly dangerous is that things similar to this are happening now and we may not even know it. If we turn off our brains these untrue assumptions are sure to run rampant.
 - current event interpretation
-    - I do not expect generative ai to have a “good take” on the current Israel and Palestine conflict. Neither should you. There have been multiple horrific examples of ai gone awry when unsupervised with contemporary data.
+  - I do not expect generative ai to have a “good take” on the current Israel and Palestine conflict. Neither should you. There have been multiple horrific examples of ai gone awry when unsupervised with contemporary data.
 - guide rails and self censorship
-    - I thank the ingenuity and dedication of antagonistic individuals in depicting the swiss cheese fence that is generative ai rule sets.
+  - I thank the ingenuity and dedication of antagonistic individuals in depicting the swiss cheese fence that is generative ai rule sets.
 - hallucinations
-    - Rare, bizarre, entertaining, but potentially dangerous nonetheless.
+  - Rare, bizarre, entertaining, but potentially dangerous nonetheless.
 
 ## Beautifying the ugly
 
@@ -70,7 +74,7 @@ The biggest pitfall of all generative ai is data contamination. This includes da
 
 ### Opinions & ai don’t mix
 
-We should most definitely limit the applications of generative ai. It’s that simple. One of the smartest things openAI ever did was to not give chatGPT knowledge of contemporary events. 
+We should most definitely limit the applications of generative ai. It’s that simple. One of the smartest things openAI ever did was to not give chatGPT knowledge of contemporary events.
 
 As the technology has been progressing the temptation has continually been to give access to the newest information. This is a mistake. As previously stated, we must train models on accurate data.
 
@@ -106,7 +110,6 @@ As ai tooling continues to develop I hope we see diverse and more specialized to
 
 ---
 
-
-**post script rant:** 
+**post script rant:**
 
 Verbose writing, while increasingly easier to generate with ai, will continue to be useless.

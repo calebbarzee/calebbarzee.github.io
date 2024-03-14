@@ -1,5 +1,5 @@
 import Markdown from "markdown-to-jsx";
-import {get_metadata, get_content} from "../../utils/get_article";
+import { get_metadata, get_content } from "../../utils/get_article";
 
 export const generateStaticParams = async () => {
   const articles = get_metadata();
