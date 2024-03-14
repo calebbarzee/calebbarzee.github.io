@@ -5,7 +5,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="font-monospace">
+      <div className="-mt-20">
         <h1 className="text-3xl">Simple Solutions, Big Impact</h1>
         <br />
         <p className="text-md">Hi there! I'm Caleb, an engineer who loves to solve big problems with simple code.</p>
@@ -38,9 +38,6 @@ export default function Home() {
             <Link href="mailto:barzeec@gmail.com"><h6 className="hover:underline">Contact -&gt;</h6></Link>
           </div>
         </div>
-        <div className="">
-            <Link href="/math"><h6 className="hover:underline">Mathmatica! -&gt;</h6></Link>
-          </div>
       </div>
     </main>
   );
