@@ -38,6 +38,9 @@ export default function Home() {
             <Link href="mailto:barzeec@gmail.com"><h6 className="hover:underline">Contact -&gt;</h6></Link>
           </div>
         </div>
+        <div className="">
+            <Link href="/math"><h6 className="hover:underline">Mathmatica! -&gt;</h6></Link>
+          </div>
       </div>
     </main>
   );
