@@ -29,7 +29,7 @@ export default function AnimatePi({PI}) {
 		  <label className="md:row-start-1 md:col-start-1 md:col-span-2">Number of Digits: </label>
 		  <input className="bg-transparent border-2 border-slate-300 p-2 rounded-md md:row-start-1 md:col-start-3" title="Iterations" type="number" value={numOfDigits} onChange={(e) => {setNumOfDigits(e.target.value); setIsRunning(false)}} />
 		  <button className="self-center md:self-auto hover:underline md:row-start-1" onClick={() => setIsRunning(!isRunning)}>{isRunning ? "Stop" : "Start"}</button>
-		  <div className="border-2 border-slate-300 p-4 rounded-md md:row-start-2 md:col-span-5 w-screen">
+		  <div className="border-2 border-slate-300 p-4 rounded-md md:row-start-2 md:col-span-5 w-full">
 			<span className="text-2xl font-mono font-semibold break-words text-wrap">
 			  {displayedDigits}
 			</span>
