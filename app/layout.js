@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   const header = (
     <header>
-          <div className="mt-20 mx-auto grid grid-cols-5 gap-2">
+          <div className="mt-20 mx-auto grid grid-cols-5 gap-2 items-center justify-between max-w-full">
           <div className="col-start-2">
             <Link href="/"><h6 className="hover:underline">Home -&gt;</h6></Link>
           </div>
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
             <Link href="/blog"><h6 className="hover:underline">Blog -&gt;</h6></Link>
           </div>
           <div className="col-start-4">
-            <Link href="/math/pi_day"><h6 className="hover:underline">Pi Day! -&gt;</h6></Link>
+            <Link href="/math/pi_day"><h6 className="hover:underline text-lg">π -&gt;</h6></Link>
           </div>
         </div>
     </header>
