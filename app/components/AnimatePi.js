@@ -26,7 +26,7 @@ export default function AnimatePi({ PI }) {
     }
 
     return () => clearInterval(interval); // Cleanup on component unmount or isRunning change
-  }, [isRunning]); // Depend on isRunning to re-activate or deactivate the interval
+  }, [isRunning, PI, displayedDigits, numOfDigits]); // Depend on isRunning to re-activate or deactivate the interval
 
   return (
     <>
