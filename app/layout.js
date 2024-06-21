@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
           </Link>
         </div>
         <div className="col-start-4">
-          <Link href="/math/pi_day">
-            <h6 className="text-lg hover:underline">π -&gt;</h6>
+          <Link href="/kids_can_code/">
+            <h6 className="hover:underline">Kids_Can_Code -&gt;</h6>
           </Link>
         </div>
       </div>
