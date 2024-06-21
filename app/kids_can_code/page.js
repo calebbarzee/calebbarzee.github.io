@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Homepage() {
 
   return (
@@ -10,7 +12,14 @@ export default function Homepage() {
 			</p>
     	</div>
     	<div>
-			{/* links go here */}
+			<ul>
+				<li><Link href="https://codepen.io/calebbarzee/pen/VwOroVq">
+					<h6 className="text-xl hover:underline">• Text_Adventure: Code_Quest -&gt;</h6>
+				</Link></li>
+				<li><Link href="https://github.com/calebbarzee/kids_can_code">
+					<h6 className="text-xl hover:underline">• Kids_Can_Code: All_Projects_Repository -&gt;</h6>
+				</Link></li>
+			</ul>
         </div>
 			<h4 className="text-xl font-bold">Happy Coding!</h4>
 			<img src="/typing_pixel_art.gif" alt="pixel art gif of typing on a keyboard" className="w-full h-auto" />
