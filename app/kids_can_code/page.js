@@ -11,13 +11,16 @@ export default function Homepage() {
 				Here you can find all the links to resources we&apos;ll be using in our projects.
 			</p>
     	</div>
+		<div>
+			
+		</div>
     	<div>
 			<ul>
 				<li><Link href="https://codepen.io/calebbarzee/pen/VwOroVq">
 					<h6 className="text-xl hover:underline">• Text_Adventure: Code_Quest -&gt;</h6>
 				</Link></li>
 				<li><Link href="https://codepen.io/calebbarzee/pen/ZENxqoK">
-					<h6 className="text-xl hover:underline">• Personal_Webpage-&gt;</h6>
+					<h6 className="text-xl hover:underline">• Personal_Webpage -&gt;</h6>
 				</Link></li>
 				<li><Link href="https://github.com/calebbarzee/kids_can_code">
 					<h6 className="text-xl hover:underline">• Kids_Can_Code: All_Projects_Repository -&gt;</h6>
