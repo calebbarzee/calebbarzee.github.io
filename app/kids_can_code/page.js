@@ -16,6 +16,9 @@ export default function Homepage() {
 		</div>
     	<div>
 			<ul>
+				<li><Link href="https://app.edublocks.org/project/8PLjPRkNk9WiZGIKTV7JYHlyO7j1/JKKmDsmuTSgIQIcZL8ad">
+					<h6 className="text-xl hover:underline">• Tic-Tac-Toe: edublocks -&gt;</h6>
+				</Link></li>
 				<li><Link href="https://codepen.io/calebbarzee/pen/VwOroVq">
 					<h6 className="text-xl hover:underline">• Text_Adventure: Code_Quest -&gt;</h6>
 				</Link></li>
