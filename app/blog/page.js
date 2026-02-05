@@ -1,5 +1,5 @@
-import { get_metadata } from "../utils/get_article";
-import ArticlePreview from "../components/ArticlePreview";
+import { get_metadata } from "/app/utils/get_article";
+import ArticlePreview from "/app/components/article_preview";
 
 const HomePage = () => {
   const article_metadata = get_metadata();

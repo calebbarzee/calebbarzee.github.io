@@ -5,14 +5,12 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: "media", // or 'class'
+  darkMode: "media",
   theme: {
     extend: {
       colors: {
-        // Existing colors remain unchanged
         primary: "#eae0d5",
         secondary: "#e4e6eb",
-        // Adding more shades for detailed ASCII art
         lightest: "#f8f9fa",
         lighter: "#f1f3f5",
         "light-medium": "#dee2e6",
@@ -20,7 +18,6 @@ module.exports = {
         "dark-medium": "#adb5bd",
         darker: "#6c757d",
         darkest: "#495057",
-        // Dark theme colors remain unchanged
         "dark-primary": "#302f3a",
         "dark-secondary": "#343a40",
         "dark-tertiary": "#495057",
@@ -34,8 +31,7 @@ module.exports = {
         monospace: ['"Fira Code"', '"Roboto Mono"', "monospace"],
       },
       fontSize: {
-        // Refining font sizes for better control in ASCII art
-        xs: "0.75rem", // Adjusted for better visibility
+        xs: "0.75rem",
         sm: "0.875rem",
         base: "1rem",
         lg: "1.125rem",
@@ -47,7 +43,6 @@ module.exports = {
         "6xl": "4rem",
       },
       lineHeight: {
-        // Custom line heights for ASCII consistency
         tight: 1.1,
         snug: 1.2,
         normal: 1.5,
@@ -55,7 +50,6 @@ module.exports = {
         loose: 2,
       },
       boxShadow: {
-        // Existing shadows remain unchanged
         "custom-light": "0 2px 4px 0 rgba(0, 0, 0, 0.1)",
         "custom-dark": "0 2px 4px 0 rgba(0, 0, 0, 0.9)",
       },

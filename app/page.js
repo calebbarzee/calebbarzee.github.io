@@ -9,18 +9,16 @@ export default function Home() {
         <h1 className="text-3xl">Simple Solutions, Big Impact</h1>
         <br />
         <p className="text-md">
-          Hi there! I&apos;m Caleb, an engineer who loves to solve big problems with
-          simple code.
+          hi i'm Caleb, an engineer who loves to make simple effective things.
         </p>
         <br />
         <h3 className="text-xl">A Bit About Me</h3>
         <p className="text-sm">
-          I&apos;ve always been curious about how things work, leading me from
-          playful explorations in my backyard to becoming a passionate software
-          engineer. When I&apos;m not coding, you can find me getting my hands dirty
-          with pottery or gardening, cycling, expressing thoughts through
-          design, or spending quality time with my family. These passions fuel
-          and inspire my work.
+          i've always been curious about how things work.
+          this has taken me from diggging in my childhood backyard to becoming an engineer and designer.
+          when i'm not coding, you can find me getting my hands dirty with pottery or gardening.
+          i also love cycling and spending quality time with my family.
+          i find my life inspires my work.
         </p>
         <br />
         <h3 className="text-xl">My Work</h3>
