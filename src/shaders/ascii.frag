@@ -86,7 +86,7 @@ void main() {
     float pixel = getChar(charIdx, cellUV);
 
     // Terminal green
-    vec3 terminalGreen = vec3(0.2, 1.0, 0.2);
+    vec3 terminalGreen = vec3(0.588, 0.808, 0.271);
     // Blend between terminal green and original color
     vec3 tint = mix(terminalGreen, sceneColor, u_color_mix);
 
