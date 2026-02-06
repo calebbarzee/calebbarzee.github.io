@@ -1,6 +1,8 @@
 use leptos::prelude::*;
 use leptos_router::components::A;
 
+use super::ThemeToggle;
+
 #[component]
 pub fn Nav() -> impl IntoView {
     view! {
@@ -11,13 +13,13 @@ pub fn Nav() -> impl IntoView {
                 <span class="separator">" | "</span>
                 <A href="/gallery">"gallery"</A>
                 <span class="separator">" | "</span>
+                <A href="/viewer/stl">"3d-viewer"</A>
+                <span class="separator">" | "</span>
+                <A href="/viewer/image">"image-fx"</A>
+                <span class="separator">" | "</span>
                 <A href="/blog">"blog"</A>
-                <span class="separator">" | "</span>
-                <a href="#about">"about"</a>
-                <span class="separator">" | "</span>
-                <a href="#projects">"projects"</a>
-                <span class="separator">" | "</span>
-                <a href="#contact">"contact"</a>
+                <div class="nav-spacer"></div>
+                <ThemeToggle />
             </div>
         </nav>
     }

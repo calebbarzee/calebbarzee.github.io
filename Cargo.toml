@@ -20,9 +20,20 @@ pulldown-cmark = "0.12"
 version = "0.3"
 features = [
     "console",
+    "Blob",
+    "DataTransfer",
     "Document",
+    "DragEvent",
     "Element",
+    "EventTarget",
+    "File",
+    "FileList",
+    "FileReader",
     "HtmlCanvasElement",
+    "HtmlImageElement",
+    "HtmlInputElement",
+    "MouseEvent",
+    "Url",
     "WebGl2RenderingContext",
     "WebGlBuffer",
     "WebGlFramebuffer",
@@ -32,9 +43,14 @@ features = [
     "WebGlUniformLocation",
     "WebGlRenderbuffer",
     "WebGlVertexArrayObject",
+    "Storage",
+    "WheelEvent",
     "Window",
     "Performance",
 ]
+
+[build-dependencies]
+toml = "0.8"
 
 [dev-dependencies]
 wasm-bindgen-test = "0.3"

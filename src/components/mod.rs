@@ -4,9 +4,12 @@ mod footer;
 pub mod gallery;
 mod header;
 mod hero;
+pub mod image_viewer;
 mod nav;
 mod projects;
+mod theme_toggle;
 pub mod render_canvas;
+pub mod stl_viewer;
 
 pub use about::About;
 pub use footer::Footer;
@@ -15,3 +18,4 @@ pub use hero::Hero;
 pub use nav::Nav;
 pub use projects::Projects;
 pub use render_canvas::RenderCanvas;
+pub use theme_toggle::ThemeToggle;

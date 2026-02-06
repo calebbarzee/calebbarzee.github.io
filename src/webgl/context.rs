@@ -9,7 +9,7 @@ pub fn init_webgl2(canvas: &HtmlCanvasElement) -> Result<WebGl2RenderingContext,
         .dyn_into::<WebGl2RenderingContext>()
         .map_err(|_| "Failed to cast to WebGl2RenderingContext")?;
 
-    gl.clear_color(0.04, 0.04, 0.04, 1.0);
+    gl.clear_color(0.106, 0.055, 0.090, 1.0);
     gl.clear(WebGl2RenderingContext::COLOR_BUFFER_BIT);
 
     Ok(gl)

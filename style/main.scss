@@ -1,11 +1,13 @@
-:root {
-    --bg: #0a0a0a;
-    --bg-light: #111111;
-    --fg: #33ff33;
-    --fg-dim: #1a8c1a;
-    --fg-bright: #66ff66;
-    --accent: #00ffcc;
-    --border: #1a3a1a;
+@use 'theme/generated';
+
+[data-theme="dark"], [data-theme="light"] {
+    --bg: var(--background-dim);
+    --bg-light: var(--background-1);
+    --fg: var(--foreground);
+    --fg-dim: var(--grey-1);
+    --fg-bright: var(--green);
+    --accent: var(--green);
+    --border: var(--background-3);
     --font-mono: "Courier New", "Lucida Console", monospace;
 }
 
@@ -94,6 +96,26 @@ a {
     }
 }
 
+.nav-spacer {
+    flex: 1;
+}
+
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--fg-dim);
+    font-family: var(--font-mono);
+    font-size: 0.85rem;
+    padding: 0.1rem 0.4rem;
+    cursor: pointer;
+    transition: border-color 0.2s, color 0.2s;
+
+    &:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+    }
+}
+
 // ── Hero ────────────────────────────────────
 .hero {
     position: relative;
@@ -130,7 +152,7 @@ a {
         z-index: 1;
         text-align: center;
         padding: 2rem;
-        background: rgba(10, 10, 10, 0.7);
+        background: color-mix(in srgb, var(--bg) 70%, transparent);
         border: 1px solid var(--border);
 
         h1 {
@@ -153,7 +175,7 @@ a {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        background: rgba(10, 10, 10, 0.8);
+        background: color-mix(in srgb, var(--bg) 80%, transparent);
         padding: 0.75rem;
         border: 1px solid var(--border);
         font-size: 0.75rem;
@@ -666,6 +688,80 @@ a {
         max-width: 100%;
         height: auto;
         border-radius: 4px;
+    }
+}
+
+// ── STL & Image Viewers ────────────────────
+.stl-viewer,
+.image-viewer {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 120px);
+}
+
+.upload-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-light);
+    flex-wrap: wrap;
+
+    input[type="file"] {
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        color: var(--fg);
+
+        &::file-selector-button {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            padding: 0.4rem 0.8rem;
+            background: var(--bg);
+            color: var(--accent);
+            border: 1px solid var(--border);
+            cursor: pointer;
+            margin-right: 0.75rem;
+
+            &:hover {
+                background: var(--accent);
+                color: var(--bg);
+            }
+        }
+    }
+
+    select {
+        font-family: var(--font-mono);
+        font-size: 0.85rem;
+        padding: 0.4rem 0.8rem;
+        background: var(--bg);
+        color: var(--fg);
+        border: 1px solid var(--border);
+        cursor: pointer;
+
+        &:hover {
+            border-color: var(--accent);
+        }
+
+        &:focus {
+            outline: 1px solid var(--accent);
+        }
+    }
+}
+
+.upload-placeholder {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed var(--border);
+    margin: 1rem;
+    z-index: 1;
+
+    p {
+        color: var(--fg-dim);
+        font-size: 1rem;
     }
 }
 

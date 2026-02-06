@@ -96,20 +96,16 @@ fn markdown_to_html(markdown: &str) -> String {
     html_output
 }
 
-// ── Blog Registry ──────────────────────────────────────────
-// Add new posts here by including the markdown file.
+// ── Blog Registry (auto-generated from src/articles/*.md) ──
 
-const POST_CALCULATING_PI: &str = include_str!("posts/pi_calc_blog1.md");
-const POST_GENERATIVE_AI: &str = include_str!("posts/gen_ai_blog1.md");
-const POST_RETHINKING_RESUME: &str = include_str!("posts/rethinking_the_resume.md");
+include!(concat!(env!("OUT_DIR"), "/articles.rs"));
 
 /// Get all blog posts, sorted by date (newest first).
 pub fn get_all_posts() -> Vec<BlogPost> {
-    let mut posts = vec![
-        BlogPost::from_markdown("calculating-pi", POST_CALCULATING_PI),
-        BlogPost::from_markdown("generative-ai", POST_GENERATIVE_AI),
-        BlogPost::from_markdown("rethinking-the-resume", POST_RETHINKING_RESUME),
-    ];
+    let mut posts: Vec<BlogPost> = ARTICLES
+        .iter()
+        .map(|(slug, content)| BlogPost::from_markdown(slug, content))
+        .collect();
 
     // Sort by date descending (newest first)
     posts.sort_by(|a, b| b.date.cmp(&a.date));
@@ -153,8 +149,10 @@ date_written: "2024-01-15"
     #[test]
     fn test_get_all_posts() {
         let posts = get_all_posts();
-        assert_eq!(posts.len(), 3);
+        assert!(!posts.is_empty(), "Should have at least one blog post");
         // Check they're sorted by date descending
-        assert!(posts[0].date >= posts[1].date);
+        for w in posts.windows(2) {
+            assert!(w[0].date >= w[1].date, "Posts should be sorted by date descending");
+        }
     }
 }

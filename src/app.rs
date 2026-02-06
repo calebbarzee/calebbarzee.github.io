@@ -58,6 +58,26 @@ fn BlogPostPage() -> impl IntoView {
     }
 }
 
+/// STL 3D Viewer page
+#[component]
+fn StlViewerPage() -> impl IntoView {
+    view! {
+        <Header />
+        <Nav />
+        <stl_viewer::StlViewer />
+    }
+}
+
+/// Image/GIF Viewer page
+#[component]
+fn ImageViewerPage() -> impl IntoView {
+    view! {
+        <Header />
+        <Nav />
+        <image_viewer::ImageViewer />
+    }
+}
+
 #[component]
 pub fn App() -> impl IntoView {
     view! {
@@ -68,6 +88,8 @@ pub fn App() -> impl IntoView {
                 <Route path=path!("/gallery/:scene/:effect") view=GalleryViewerPage />
                 <Route path=path!("/blog") view=BlogPage />
                 <Route path=path!("/blog/:slug") view=BlogPostPage />
+                <Route path=path!("/viewer/stl") view=StlViewerPage />
+                <Route path=path!("/viewer/image") view=ImageViewerPage />
             </Routes>
         </Router>
     }
