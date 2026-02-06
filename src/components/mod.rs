@@ -1,13 +1,17 @@
-mod header;
-mod nav;
-mod hero;
 mod about;
-mod projects;
+pub mod blog;
 mod footer;
+pub mod gallery;
+mod header;
+mod hero;
+mod nav;
+mod projects;
+pub mod render_canvas;
 
-pub use header::Header;
-pub use nav::Nav;
-pub use hero::Hero;
 pub use about::About;
-pub use projects::Projects;
 pub use footer::Footer;
+pub use header::Header;
+pub use hero::Hero;
+pub use nav::Nav;
+pub use projects::Projects;
+pub use render_canvas::RenderCanvas;

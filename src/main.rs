@@ -1,5 +1,7 @@
 mod app;
+mod blog;
 mod components;
+mod shader_math;
 mod webgl;
 
 use app::App;
